@@ -1,0 +1,11 @@
+class Solution:
+    def maximumCount(self, nums: List[int]) -> int:
+        nums.sort()
+        c=0
+        num=[i for i in nums if i!=0]
+        for i in num:
+            if i>0:
+                c=num.index(i)
+                break
+        d=len(num)-c
+        return max(c,d)
