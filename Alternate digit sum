@@ -1,0 +1,15 @@
+class Solution {
+    public int alternateDigitSum(int n) {
+        if(n==0)    return 0;
+        int sum=0;
+        String a=String.valueOf(n);
+        int i=1;
+        for(int j=0;j<a.length();j++)
+        {
+            int b=Character.getNumericValue(a.charAt(j));
+            sum=sum+b*i;
+            i=i*-1;
+        }
+        return sum;
+    }
+}
