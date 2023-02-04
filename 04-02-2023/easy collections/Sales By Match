@@ -1,0 +1,27 @@
+public static int sockMerchant(int n, List<Integer> ar) {
+    // Write your code here
+        Collections.sort(ar);
+        int count=1;
+        int pair=0;
+        int current=ar.get(0);
+        for(int i=1;i<ar.size();i++)
+        {
+            if(ar.get(i)==current)
+            {
+                count++;
+                if(count==2)
+                {
+                    pair++;
+                    count-=2;
+                }
+            }
+            else{
+                current=ar.get(i);
+                count=1;
+            }
+        }
+        return pair;
+
+    }
+
+}
