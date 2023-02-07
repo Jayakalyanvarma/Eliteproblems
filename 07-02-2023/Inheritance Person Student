@@ -1,0 +1,79 @@
+import java.io.*;
+import java.util.*;
+class person
+{
+    private String firstName;
+    private String lastName;
+    private int id;
+    int[] testscores;
+    person(String firstName,String lastName,int id,int[] testscores)
+    {
+        this.firstName=firstName;
+        this.lastName=lastName;
+        this.id=id;
+        this.testscores=testscores;
+    }
+    public void personDetails()
+    {
+        System.out.println("Name: "+lastName+","+" "+ firstName+"\nID: "+id);
+    }        
+}
+class student extends person
+{
+   student(String firstName,String lastName,int id,int[] testscores)
+   {
+        super(firstName,lastName,id,testscores);
+   }
+   public String calculate()
+   {
+       int sum=0;
+        int n=testscores.length;
+       for(int testscore:testscores)
+       {
+           sum+=testscore;
+       }
+       int avg=sum/n;
+       if(avg>=90 && avg<=100)
+       {
+           return "O";
+       }
+       if(avg>=80 && avg<=90)
+       {
+           return "E";
+       }
+       if(avg>=70 && avg<=80)
+       {
+           return "A";
+       }
+       if(avg>=55 && avg<=70)
+       {
+           return "P";
+       }
+       if(avg>=40 && avg<=55)
+       {
+           return "D";
+       }
+       return "T";
+       
+   }
+}
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner(System.in);
+        String firstName=sc.next();
+        String lastName=sc.next();
+        int id=sc.nextInt();
+        int n=sc.nextInt();
+        int[] testscores=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            testscores[i]=sc.nextInt();
+        }
+        student stu=new student(firstName,lastName,id,testscores);
+        stu.personDetails();
+        System.out.println("Grade: "+stu.calculate());
+    }
+}
