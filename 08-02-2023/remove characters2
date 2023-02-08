@@ -1,0 +1,37 @@
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    Scanner sc=new Scanner(System.in);
+    String str1 = sc.next();
+    String str2 = sc.next();
+    HashMap < Character, Integer > mp = new HashMap < > ();
+    for (char ch:str2.toCharArray()) {
+      if(mp.containsKey(ch))
+      {
+          mp.put(ch,mp.get(ch)+1);
+      }
+      else
+      {
+          mp.put(ch,1);
+      }
+        
+    }
+    for(char chr:str1.toCharArray())
+    {
+        if(!mp.containsKey(chr))
+        {
+            System.out.print(chr);
+        }
+        else
+        {
+            mp.put(chr,mp.get(chr)-1);
+        }
+        if(mp.containsKey(chr)&&mp.get(chr)==0)
+        {
+            mp.remove(chr);
+        }
+    }
+   
+    }
+}
