@@ -1,0 +1,26 @@
+public static String gridChallenge(List<String> grid) {
+    // Write your code here
+      char[] row;
+      char first='\0';
+      char last='\0';
+      for(String row1:grid)
+      {
+          int len=row1.length();
+          row=row1.toCharArray();
+          Arrays.sort(row);
+          char f=row[0];
+          if(f<first)
+          {
+              return "NO";
+          }
+          char l=row[len-1];
+          if(l<last)
+          {
+              return "NO";
+          }
+          first=f;
+          last=l;
+        }
+        return "YES";
+    }
+}
