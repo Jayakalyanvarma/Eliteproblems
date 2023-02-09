@@ -1,0 +1,22 @@
+public static List<Integer> climbingLeaderboard(List<Integer> ranked, List<Integer> player) {
+    // Write your code here
+    Set<Integer> set=new HashSet<>(ranked);
+    ranked.clear();
+    ranked.addAll(set);
+    Collections.sort(ranked);
+    int c=0;
+    int n=ranked.size();
+    List<Integer> newrank=new ArrayList<>();
+    for(int i=0;i<player.size();i++)
+    {
+        while(c<n && ranked.get(c)<=player.get(i))
+        {
+            c++;
+        }
+        newrank.add(n-c+1);
+    }
+    return newrank;
+
+    }
+
+}
