@@ -1,0 +1,24 @@
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();
+        char[] ch=str.toCharArray();
+        for(int i=0,j=ch.length-1;i<j;i++,j--)
+        {
+            while(!Character.isLetterOrDigit(ch[i]) && i<j)
+            {
+                i++;
+            }
+            while(!Character.isLetterOrDigit(ch[j]) && j>i)
+            {
+                j--;
+            }
+            char temp=ch[i];
+            ch[i]=ch[j];
+            ch[j]=temp;
+        }
+        System.out.println(ch);
+    }
+}
