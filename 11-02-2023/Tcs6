@@ -1,0 +1,29 @@
+public class Solution {
+    public  static int febb(int n)
+    {
+            if(n==1 || n==2)
+            {
+                return 1;
+            }
+            else{
+                return febb(n-1)+febb(n-2);
+            }
+    }
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        if(n%2==1)
+        {
+            System.out.println(n);
+        }
+        else
+        {
+            int a=Math.floorDiv(n,2);
+            int b=febb(a);
+            System.out.println(b);
+        }
+        
+    }
+}
