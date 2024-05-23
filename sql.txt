@@ -153,218 +153,215 @@ The WHERE clause is used to filter rows from a result set based on specified con
 The ORDER BY clause is used to sort the result set of a query based on specified columns in ascending or descending order.
 
 45.What is the purpose of the GROUP BY clause?
-2
 The GROUP BY clause is used to group rows from a result set based on specified columns and perform aggregate functions on each group.
-Explain the HAVING clause.
 
+46.Explain the HAVING clause.
 The HAVING clause is used to filter groups from a result set based on specified conditions after the GROUP BY clause has been applied.
-What is the difference between WHERE and HAVING clauses?
 
+47.What is the difference between WHERE and HAVING clauses?
 The WHERE clause is used to filter rows from the result set before grouping, while the HAVING clause is used to filter groups from the result set after grouping.
-What is the purpose of the JOIN clause in SQL?
 
+48.What is the purpose of the JOIN clause in SQL?
 The JOIN clause is used to combine rows from two or more tables based on a related column between them.
-Explain the different types of JOINs.
 
+49.Explain the different types of JOINs.
 The different types of JOINs in SQL are:
 INNER JOIN: Returns rows that have matching values in both tables.
 LEFT JOIN: Returns all rows from the left table and matching rows from the right table, with NULLs for unmatched rows.
 RIGHT JOIN: Returns all rows from the right table and matching rows from the left table, with NULLs for unmatched rows.
 FULL JOIN: Returns all rows when there is a match in either table, with NULLs for unmatched rows.
 CROSS JOIN: Returns the Cartesian product of two tables, resulting in all possible combinations of rows.
-How do you use the UNION clause in SQL?
 
+50.How do you use the UNION clause in SQL?
 The UNION clause is used to combine the result sets of two or more SELECT statements into a single result set, removing duplicate rows by default.
-What is the difference between UNION and UNION ALL clauses?
 
+51.What is the difference between UNION and UNION ALL clauses?
 UNION removes duplicate rows from the combined result set, while UNION ALL retains all rows, including duplicates, from the combined result set.
 --------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------
 Filtering Data in SQL:
 
-What is the purpose of the WHERE clause in SQL?
-
+52.What is the purpose of the WHERE clause in SQL?
 The WHERE clause is used to filter rows from a result set based on specified conditions.
-How do you use the WHERE clause in a SELECT statement?
 
+53.How do you use the WHERE clause in a SELECT statement?
 You use the WHERE clause after the FROM clause in a SELECT statement to specify the conditions that the rows must meet to be included in the result set.
-What operators can you use in the WHERE clause for comparisons?
 
+54.What operators can you use in the WHERE clause for comparisons?
 You can use operators such as = (equal), <> or != (not equal), < (less than), > (greater than), <= (less than or equal to), >= (greater than or equal to), BETWEEN, LIKE, IN, and IS NULL.
-Explain the use of the BETWEEN operator in the WHERE clause.
 
+55.Explain the use of the BETWEEN operator in the WHERE clause.
 The BETWEEN operator is used to filter rows based on a range of values. It checks if a value lies within a specified range, inclusive of the endpoints.
-How do you use the LIKE operator for pattern matching in the WHERE clause?
 
+56.How do you use the LIKE operator for pattern matching in the WHERE clause?
 The LIKE operator is used for pattern matching in the WHERE clause. It allows you to search for a specified pattern in a column using wildcard characters such as % (matches zero or more characters) and _ (matches a single character).
-What is the purpose of the IN operator in the WHERE clause?
 
+57.What is the purpose of the IN operator in the WHERE clause?
 The IN operator is used to specify multiple values for a column in the WHERE clause. It allows you to filter rows where the column value matches any value in a list.
-Explain the usage of the IS NULL operator in the WHERE clause.
 
+58.Explain the usage of the IS NULL operator in the WHERE clause.
 The IS NULL operator is used to filter rows where the value of a column is NULL.
-How do you use the AND and OR operators in the WHERE clause?
 
+59.How do you use the AND and OR operators in the WHERE clause?
 The AND operator is used to combine multiple conditions in the WHERE clause, and all conditions must be true for a row to be included in the result set. The OR operator is used to specify multiple conditions, and any condition being true will include the row in the result set.
-What is the purpose of the NOT operator in the WHERE clause?
-
+60.What is the purpose of the NOT operator in the WHERE clause?
 The NOT operator is used to negate a condition in the WHERE clause. It returns true if the condition is false, and vice versa.
-How do you use parentheses to group conditions in the WHERE clause?
 
+61.How do you use parentheses to group conditions in the WHERE clause?
 Parentheses can be used to group conditions in the WHERE clause to control the order of evaluation and logic.
-Explain the difference between the WHERE clause and the HAVING clause.
 
+62.Explain the difference between the WHERE clause and the HAVING clause.
 The WHERE clause is used to filter rows from the result set before grouping (if any), while the HAVING clause is used to filter groups from the result set after grouping has been applied.
-What is the purpose of the DISTINCT keyword in SQL?
 
+63.What is the purpose of the DISTINCT keyword in SQL?
 The DISTINCT keyword is used to eliminate duplicate rows from the result set returned by a SELECT statement.
-How do you use the DISTINCT keyword in combination with the WHERE clause?
 
+64.How do you use the DISTINCT keyword in combination with the WHERE clause?
 You can use the DISTINCT keyword in a SELECT statement to remove duplicate rows from the result set based on the columns specified in the SELECT clause, and you can use it in combination with the WHERE clause to filter rows before removing duplicates.
-Explain the usage of the ORDER BY clause in SQL.
 
+65.Explain the usage of the ORDER BY clause in SQL.
 The ORDER BY clause is used to sort the result set of a SELECT statement based on specified columns in ascending or descending order.
-Can you use the ORDER BY clause with the WHERE clause in SQL?
 
+66.Can you use the ORDER BY clause with the WHERE clause in SQL?
 Yes, you can use the ORDER BY clause with the WHERE clause in SQL. The WHERE clause filters rows from the result set, and the ORDER BY clause sorts the filtered rows.
-What is the purpose of the LIMIT clause in SQL?
 
+67.What is the purpose of the LIMIT clause in SQL?
 The LIMIT clause is used to restrict the number of rows returned by a SELECT statement.
-How do you use the LIMIT clause with the WHERE clause in SQL?
 
+68.How do you use the LIMIT clause with the WHERE clause in SQL?
 You can use the LIMIT clause after the WHERE clause in a SELECT statement to limit the number of rows returned by the query after filtering.
-Explain the usage of the OFFSET clause in SQL.
 
+69.Explain the usage of the OFFSET clause in SQL.
 The OFFSET clause is used to skip a specified number of rows before returning the remaining rows in the result set.
-Can you use the OFFSET clause without the LIMIT clause in SQL?
 
+70.Can you use the OFFSET clause without the LIMIT clause in SQL?
 Yes, you can use the OFFSET clause without the LIMIT clause in SQL. It is useful for skipping a specified number of rows from the beginning of the result set.
-How do you use the OFFSET clause with the WHERE clause in SQL?
 
+71.How do you use the OFFSET clause with the WHERE clause in SQL?
 You can use the OFFSET clause with the WHERE clause by first filtering the rows using the WHERE clause and then using the OFFSET clause to skip a specified number of rows before returning the remaining rows.
-Explain the usage of the FETCH clause in SQL.
 
+72.Explain the usage of the FETCH clause in SQL.
 The FETCH clause is used to limit the number of rows returned by a SELECT statement, similar to the LIMIT clause. However, it provides more flexibility, allowing you to specify both the number of rows and the starting row.
-Can you use the FETCH clause without the OFFSET clause in SQL?
 
+73.Can you use the FETCH clause without the OFFSET clause in SQL?
 Yes, you can use the FETCH clause without the OFFSET clause in SQL. When used without OFFSET, FETCH retrieves the first N rows from the result set.
-How do you use the FETCH clause with the WHERE clause in SQL?
 
+74.How do you use the FETCH clause with the WHERE clause in SQL?
 You can use the FETCH clause with the WHERE clause by first filtering the rows using the WHERE clause and then using the FETCH clause to limit the number of rows returned.
-What is the purpose of the TOP clause in SQL Server?
 
+75.What is the purpose of the TOP clause in SQL Server?
 The TOP clause is used in SQL Server to limit the number of rows returned by a SELECT statement.
-Can you use the TOP clause with the WHERE clause in SQL Server?
 
+76.Can you use the TOP clause with the WHERE clause in SQL Server?
 Yes, you can use the TOP clause with the WHERE clause in SQL Server. The WHERE clause filters rows from the result set, and the TOP clause limits the number of rows returned.
-Explain the usage of the ROW_NUMBER() function in SQL.
 
+77.Explain the usage of the ROW_NUMBER() function in SQL.
 The ROW_NUMBER() function is used to assign a unique sequential integer to each row in the result set based on a specified ordering.
-How do you use the ROW_NUMBER() function with the WHERE clause in SQL?
 
+78.How do you use the ROW_NUMBER() function with the WHERE clause in SQL?
 You can use the ROW_NUMBER() function in a subquery or Common Table Expression (CTE) to assign row numbers to rows in the result set, and then use the WHERE clause to filter rows based on the assigned row numbers.
-What is the purpose of the RANK() function in SQL?
 
+79.What is the purpose of the RANK() function in SQL?
 The RANK() function is used to assign a unique rank to each row in the result set based on a specified ordering. Rows with the same values are assigned the same rank, and the next rank is skipped.
-Can you use the RANK() function with the WHERE clause in SQL?
 
+80.Can you use the RANK() function with the WHERE clause in SQL?
 Yes, you can use the RANK() function with the WHERE clause in SQL. The WHERE clause filters rows from the result set, and the RANK() function assigns ranks to the filtered rows.
-Explain the usage of the DENSE_RANK() function in SQL.
 
+81.Explain the usage of the DENSE_RANK() function in SQL.
 The DENSE_RANK() function is used to assign a unique rank to each row in the result set based on a specified ordering. Rows with the same values are assigned the same rank, and the next rank is not skipped.
-How do you use the DENSE_RANK() function with the WHERE clause in SQL?
 
+82.How do you use the DENSE_RANK() function with the WHERE clause in SQL?
 You can use the DENSE_RANK() function in a subquery or Common Table Expression (CTE) to assign dense ranks to rows in the result set, and then use the WHERE clause to filter rows based on the assigned ranks.
-What is the purpose of the NTILE() function in SQL?
 
+83.What is the purpose of the NTILE() function in SQL?
 The NTILE() function is used to divide the result set into a specified number of approximately equal-sized groups, and assign a group number to each row.
-Can you use the NTILE() function with the WHERE clause in SQL?
 
+84.Can you use the NTILE() function with the WHERE clause in SQL?
 Yes, you can use the NTILE() function with the WHERE clause in SQL. The WHERE clause filters rows from the result set, and the NTILE() function assigns group numbers to the filtered rows.
-Explain the usage of the LEAD() function in SQL.
 
+85.Explain the usage of the LEAD() function in SQL.
 The LEAD() function is used to retrieve the value of a column from the next row in the result set, based on a specified ordering.
-How do you use the LEAD() function with the WHERE clause in SQL?
 
+86.How do you use the LEAD() function with the WHERE clause in SQL?
 You can use the LEAD() function in a subquery or Common Table Expression (CTE) to retrieve values from the next row in the result set, and then use the WHERE clause to filter rows based on the retrieved values.
-What is the purpose of the LAG() function in SQL?
 
+87.What is the purpose of the LAG() function in SQL?
 The LAG() function is used to retrieve the value of a column from the previous row in the result set, based on a specified ordering.
-Can you use the LAG() function with the WHERE clause in SQL?
 
+88.Can you use the LAG() function with the WHERE clause in SQL?
 Yes, you can use the LAG() function with the WHERE clause in SQL. The WHERE clause filters rows from the result set, and the LAG() function retrieves values from the previous row for the filtered rows.
-Explain the usage of the FIRST_VALUE() function in SQL.
 
+89.Explain the usage of the FIRST_VALUE() function in SQL.
 The FIRST_VALUE() function is used to retrieve the first value of a column in the result set, based on a specified ordering.
-How do you use the FIRST_VALUE() function with the WHERE clause in SQL?
 
+90.How do you use the FIRST_VALUE() function with the WHERE clause in SQL?
 You can use the FIRST_VALUE() function in a subquery or Common Table Expression (CTE) to retrieve the first value of a column in the result set, and then use the WHERE clause to filter rows based on the retrieved value.
-What is the purpose of the LAST_VALUE() function in SQL?
 
+91.What is the purpose of the LAST_VALUE() function in SQL?
 The LAST_VALUE() function is used to retrieve the last value of a column in the result set, based on a specified ordering.
 ---------------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------
 SQL Joins:
 
-What is a SQL join?
-
+92.What is a SQL join?
 A SQL join is used to combine rows from two or more tables based on a related column between them.
-What are the different types of SQL joins?
 
+93.What are the different types of SQL joins?
 The different types of SQL joins are:
 INNER JOIN
 LEFT JOIN (or LEFT OUTER JOIN)
 RIGHT JOIN (or RIGHT OUTER JOIN)
 FULL JOIN (or FULL OUTER JOIN)
 CROSS JOIN
-Explain INNER JOIN.
 
+94.Explain INNER JOIN.
 An INNER JOIN returns rows that have matching values in both tables based on the specified join condition.
-Explain LEFT JOIN.
 
+95.Explain LEFT JOIN.
 A LEFT JOIN returns all rows from the left table and the matching rows from the right table, with NULLs for rows that have no match in the right table.
-Explain RIGHT JOIN.
 
+96.Explain RIGHT JOIN.
 A RIGHT JOIN returns all rows from the right table and the matching rows from the left table, with NULLs for rows that have no match in the left table.
-Explain FULL JOIN.
 
+97.Explain FULL JOIN.
 A FULL JOIN returns all rows when there is a match in either table, with NULLs for rows that have no match.
-Explain CROSS JOIN.
 
+98.Explain CROSS JOIN.
 A CROSS JOIN returns the Cartesian product of two tables, resulting in all possible combinations of rows.
-What is the difference between INNER JOIN and LEFT JOIN?
 
+99.What is the difference between INNER JOIN and LEFT JOIN?
 INNER JOIN returns only the matching rows from both tables, while LEFT JOIN returns all rows from the left table and the matching rows from the right table.
-What is a self-join?
 
+100.What is a self-join?
 A self-join is a join operation where a table is joined with itself. It is useful for comparing rows within the same table.
-Explain the use of the USING clause in SQL joins.
 
+101.Explain the use of the USING clause in SQL joins.
 The USING clause is used to specify a column that exists in both tables and should be used for the join condition. It simplifies the syntax when joining tables on columns with the same name.
-Explain the use of the ON clause in SQL joins.
 
+102.Explain the use of the ON clause in SQL joins.
 The ON clause is used to specify the join condition between tables. It defines the columns from each table that should be compared to determine the rows that are included in the result set.
-What is a natural join?
 
+103.What is a natural join?
 A natural join is a join operation that automatically matches columns with the same name in both tables and returns rows where the values in those columns are equal.
-What are the disadvantages of using natural joins?
 
+104.What are the disadvantages of using natural joins?
 The disadvantages of using natural joins include lack of control over join conditions, unexpected results if columns with the same name have different meanings, and performance issues when joining large tables with many columns.
-Can you perform a join operation using the UNION clause?
 
+105.Can you perform a join operation using the UNION clause?
 No, the UNION clause is used to combine result sets vertically (stacking one on top of the other), not horizontally (combining columns from multiple tables).
-Explain the use of the INTERSECT clause in SQL.
 
+106.Explain the use of the INTERSECT clause in SQL.
 The INTERSECT clause is used to return the common rows between two or more SELECT statements. It returns rows that appear in all result sets.
-Explain the use of the EXCEPT clause in SQL.
 
+107.Explain the use of the EXCEPT clause in SQL.
 The EXCEPT clause is used to return the rows that appear in the first SELECT statement but not in the second SELECT statement. It returns the set difference between two result sets.
-How do you optimize join queries for performance?
 
+108.How do you optimize join queries for performance?
 To optimize join queries for performance, you can use appropriate indexes on join columns, avoid unnecessary joins, limit the result set by using WHERE clauses, use proper data types and constraints, and consider denormalization for frequently used queries.
-Explain the difference between JOIN and UNION.
 
+109.Explain the difference between JOIN and UNION.
 JOIN combines columns from two or more tables based on a related column, while UNION combines rows from two or more SELECT statements into a single result set.
+
 What is a non-equijoin?
 
 A non-equijoin is a join condition that uses an operator other than the equality operator (=) to join tables, such as <, >, <=, >=.
