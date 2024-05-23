@@ -22,46 +22,47 @@ FOREIGN KEY
 UNIQUE
 CHECK
 NOT NULL
-Explain the PRIMARY KEY constraint.
 
-The PRIMARY KEY constraint uniquely identifies each record in a table. It ensures that the values in the specified column or columns are unique and cannot be NULL.
-What is a FOREIGN KEY constraint?
+7.Explain the PRIMARY KEY constraint.
+A primary key is the column or columns that contain values that uniquely identify each row in a table. It ensures that the values in the specified column or columns are unique and cannot be NULL.
 
-A FOREIGN KEY constraint establishes a relationship between two tables by referencing the primary key of another table. It ensures referential integrity by preventing actions that would violate the relationships between tables.
-How do you define a UNIQUE constraint in SQL?
+8.What is a FOREIGN KEY constraint?
+A foreign key is a column (or set of columns) in a table that references the primary key or a unique key in another table. This establishes a relationship between the two tables.
 
-A UNIQUE constraint ensures that all values in a column (or a combination of columns) are unique. It prevents duplicate values from being inserted into the table.
-What is the purpose of the CHECK constraint?
+9.How do you define a UNIQUE constraint in SQL?
+A UNIQUE constraint ensures that all values in a column (or a combination of columns) are unique. It prevents duplicate values from 
+being inserted into the table.
 
+11.What is the purpose of the CHECK constraint?
 The CHECK constraint is used to limit the range of values that can be inserted into a column. It ensures that the values meet a specified condition.
-Explain the purpose of the INDEX in SQL.
 
+12.Explain the purpose of the INDEX in SQL.
 An INDEX in SQL is used to improve the performance of queries by providing faster data retrieval. It creates an ordered list of key values that point to the corresponding rows in a table.
-What is the difference between a unique index and a non-unique index?
 
+13.What is the difference between a unique index and a non-unique index?
 A unique index enforces uniqueness on the indexed column(s), preventing duplicate values, while a non-unique index allows duplicate values.
-What is the purpose of the DROP statement in SQL?
 
+14.What is the purpose of the DROP statement in SQL?
 The DROP statement is used to remove database objects such as tables, indexes, or views from the database.
-How do you use the TRUNCATE statement?
 
+15.How do you use the TRUNCATE statement?
 The TRUNCATE statement is used to remove all records from a table, but it does not delete the table structure. It is faster than DELETE statement as it does not log individual row deletions.
-Explain the purpose of the RENAME statement in SQL.
 
+16.Explain the purpose of the RENAME statement in SQL.
 The RENAME statement is used to change the name of an existing database object, such as a table, column, or index, in the database schema.
+
 DML (Data Manipulation Language):
 
-What is DML?
-
+17.What is DML?
 DML stands for Data Manipulation Language. It is a subset of SQL used for managing data within database objects.
-What are the main commands in DML?
 
+18.What are the main commands in DML?
 The main commands in DML are SELECT, INSERT, UPDATE, DELETE, and MERGE.
-What is the purpose of the SELECT statement?
 
+19.What is the purpose of the SELECT statement?
 The SELECT statement is used to retrieve data from one or more tables in a database. It allows you to specify the columns to retrieve and apply filtering and sorting criteria.
-Explain the different clauses in the SELECT statement.
 
+20.Explain the different clauses in the SELECT statement.
 The main clauses in the SELECT statement are:
 SELECT: Specifies the columns to retrieve.
 FROM: Specifies the table(s) from which to retrieve data.
@@ -69,38 +70,38 @@ WHERE: Filters rows based on specified conditions.
 GROUP BY: Groups rows into summary rows based on specified columns.
 HAVING: Filters groups based on specified conditions.
 ORDER BY: Sorts the result set based on specified columns.
-What is the purpose of the INSERT statement?
 
+21.What is the purpose of the INSERT statement?
 The INSERT statement is used to add new rows of data into a table in the database.
-How do you use the UPDATE statement in SQL?
 
+22.How do you use the UPDATE statement in SQL?
 The UPDATE statement is used to modify existing data in a table by specifying new values for one or more columns.
-Explain the DELETE statement.
 
+23.Explain the DELETE statement.
 The DELETE statement is used to remove one or more rows from a table based on specified conditions.
-What is the difference between DELETE and TRUNCATE commands?
 
+24.What is the difference between DELETE and TRUNCATE commands?
 DELETE is a DML command that removes specific rows from a table based on specified conditions, while TRUNCATE is a DDL command that removes all rows from a table without logging individual row deletions.
-How do you use the MERGE statement?
 
+25.How do you use the MERGE statement?
 The MERGE statement is used to perform insert, update, or delete operations on a target table based on the results of a join with a source table.
-Explain the difference between DELETE and DROP commands.
 
+26.Explain the difference between DELETE and DROP commands.
 DELETE is used to remove rows from a table, while DROP is used to remove entire database objects such as tables, indexes, or views from the database.
-What is the purpose of the COMMIT statement?
 
+27.What is the purpose of the COMMIT statement?
 The COMMIT statement is used to permanently save changes made in the current transaction to the database.
-What is the ROLLBACK statement?
 
+28.What is the ROLLBACK statement?
 The ROLLBACK statement is used to undo changes made in the current transaction and restore the database to its previous state.
-How do you use SAVEPOINT in SQL transactions?
 
+29.How do you use SAVEPOINT in SQL transactions?
 SAVEPOINT is used to set a point within a transaction to which you can later roll back if necessary. It allows you to create intermediate points within a transaction for more granular control over rollback operations.
-Explain the purpose of LOCKs in SQL.
 
+30.Explain the purpose of LOCKs in SQL.
 LOCKs in SQL are used to control access to database objects and prevent conflicts between concurrent transactions. They ensure data consistency and integrity in multi-user environments.
-What are the different types of locks in SQL?
 
+31.What are the different types of locks in SQL?
 The different types of locks in SQL are:
 Shared locks (S)
 Exclusive locks (X)
@@ -110,49 +111,49 @@ Schema modification locks (Sch-M)
 Bulk update locks (BU)
 DCL (Data Control Language):
 
-What is DCL?
-
+32.What is DCL?
 DCL stands for Data Control Language. It is a subset of SQL used for managing access to data within the database.
-What are the main commands in DCL?
 
+33.What are the main commands in DCL?
 The main commands in DCL are GRANT and REVOKE.
-Explain the purpose of the GRANT statement.
 
+34.Explain the purpose of the GRANT statement.
 The GRANT statement is used to give specific privileges to a user or role in the database, allowing them to perform certain actions on database objects.
-How do you use the REVOKE statement?
 
+35.How do you use the REVOKE statement?
 The REVOKE statement is used to revoke previously granted privileges from a user or role in the database, restricting their access to database objects.
-What is the difference between GRANT and REVOKE commands?
 
+36.What is the difference between GRANT and REVOKE commands?
 GRANT is used to give privileges to users or roles, while REVOKE is used to take back privileges that have been previously granted.
-What is SQL injection? How can it be prevented?
 
+37.What is SQL injection? How can it be prevented?
 SQL injection is a security vulnerability that occurs when an attacker injects malicious SQL code into input fields of a web application, allowing them to execute unauthorized SQL queries. It can be prevented by using parameterized queries, input validation, and proper error handling.
-What are privileges in SQL?
 
+38.What are privileges in SQL?
 Privileges in SQL are rights granted to users or roles that allow them to perform specific actions on database objects, such as SELECT, INSERT, UPDATE, DELETE, or EXECUTE.
-Explain the difference between privileges and roles.
 
+39.Explain the difference between privileges and roles.
 Privileges are specific rights granted to individual users or roles, while roles are collections of privileges that can be assigned to users to simplify permission management.
-How do you manage user privileges in SQL?
 
+40.How do you manage user privileges in SQL?
 User privileges in SQL can be managed using the GRANT and REVOKE statements to give or revoke specific privileges from users or roles.
-What is the purpose of the AUDIT statement in SQL?
 
+41.What is the purpose of the AUDIT statement in SQL?
 The AUDIT statement is used to enable or disable auditing for specific database objects, allowing you to track and record user actions on those objects for security and compliance purposes.
-How do you use the COMMENT statement in SQL?
 
+42.How do you use the COMMENT statement in SQL?
 The COMMENT statement is used to add comments or documentation to database objects, such as tables, columns, or views, to provide additional information for developers or users.
+
 SQL Clauses:
 
-What is the WHERE clause in SQL?
-
+43.What is the WHERE clause in SQL?
 The WHERE clause is used to filter rows from a result set based on specified conditions.
-How do you use the ORDER BY clause?
 
+44.How do you use the ORDER BY clause?
 The ORDER BY clause is used to sort the result set of a query based on specified columns in ascending or descending order.
-What is the purpose of the GROUP BY clause?
 
+45.What is the purpose of the GROUP BY clause?
+2
 The GROUP BY clause is used to group rows from a result set based on specified columns and perform aggregate functions on each group.
 Explain the HAVING clause.
 
