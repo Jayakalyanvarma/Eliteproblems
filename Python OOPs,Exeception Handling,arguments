@@ -1,0 +1,108 @@
+1.What is Object-Oriented Programming?
+Answer: Object-Oriented Programming (OOP) is a programming paradigm based on the concept of objects, 
+which are instances of classes. It allows for the modeling of real-world entities using attributes (data) and methods (functions).
+
+2.What are the four main principles of OOP?
+Answer: The four main principles of OOP are:
+   Encapsulation:The process of wrapping up variables and methods into a single entity is known as Encapsulation. e.g., a class.
+   Abstraction: Hiding the complex implementation details and showing only the necessary features of an object.
+   Inheritance: Creating a new class from an existing class, inheriting fields and methods.
+   Polymorphism: The ability of different classes to respond to the same function call in different ways.
+    The word "polymorphism" means "many forms", and in programming it refers to methods/functions/operators with the same name that can be executed on many objects or classes.
+
+3.What is a class in Python?
+Answer: A class in Python is a blueprint for creating objects. It defines a set of attributes and methods that the created objects will have.
+
+4.What is an object in Python?
+Answer: An object is an instance of a class. It is a concrete entity based on the class blueprint that has attributes and methods defined by the class.
+
+5.What is encapsulation in OOP?
+Answer: Encapsulation is the concept of wrapping data (attributes) and methods (functions) into a single unit called a class. It restricts direct access to some of an object’s components, which is a way of preventing accidental interference and misuse.
+
+6.How do you achieve encapsulation in Python?
+Answer: In Python, encapsulation is achieved using private and protected access modifiers. A single underscore _ prefix makes an attribute protected, and a double underscore __ prefix makes it private.
+
+7.What is inheritance in OOP?
+Answer: Inheritance is a mechanism where a new class inherits attributes and methods from an existing class. The new class is called the derived (or child) class, and the existing class is called the base (or parent) class.
+
+8.What is polymorphism in OOP?
+Answer: Polymorphism allows methods to do different things based on the object it is acting upon, even though they share the same name. It can be achieved through method overloading and method overriding.
+
+9.What is method overloading?
+Answer: Method overloading refers to the ability to define multiple methods with the same name but different parameters in the same class. Python does not support traditional method overloading as seen in other languages.
+
+10.What is method overriding?
+Answer: Method overriding occurs when a derived class defines a method that is already defined in its base class with the same name and parameters. It allows the derived class to provide a specific implementation of the method.
+
+11.What is an abstract class?
+Answer: An abstract class is a class that cannot be instantiated on its own and is meant to be subclassed. It can have abstract methods that must be implemented by the subclasses.
+A class that contains one or more abstract methods is called an abstract class. An abstract method is a method that has a declaration but does not have an implementation.
+
+What is an interface in OOP?
+Answer: An interface defines a contract of methods that must be implemented by any class that inherits the interface. Python does not have a built-in interface mechanism like Java, but similar behavior can be achieved using abstract base classes.
+
+12.What is multiple inheritance?
+Answer: Multiple inheritance is a feature where a class can inherit attributes and methods from more than one parent class.
+
+13.What is the difference between a class and an object?
+Answer: A class is a blueprint for objects, defining attributes and methods. An object is an instance of a class, with specific values for attributes defined by the class.
+
+14.What is the difference between composition and inheritance?
+Answer: Inheritance is a "is-a" relationship where a class inherits from a parent class. Composition is a "has-a" relationship where a class is composed of one or more objects from other classes.
+
+15.What is a constructor in Python?
+Answer: A constructor is a special method in a class that is automatically called when an object is instantiated. In Python, the constructor method is __init__().
+
+16.What is the difference between __init__ and __new__ in Python?
+Answer: __init__ initializes a new object after it has been created, whereas __new__ is responsible for creating a new instance of a class.
+
+17.What is a destructor in Python?
+Answer: A destructor is a method that is called when an object is about to be destroyed. In Python, it is defined using __del__().
+
+18.What is the purpose of self in Python?
+Answer: self is a reference to the current instance of the class. It is used to access variables and methods associated with the instance.
+
+19.Can you explain the concept of static methods in Python?
+Answer: A static method is a method that belongs to a class rather than an instance of a class. It does not modify object state and is defined using the @staticmethod decorator.
+
+20.What are class methods in Python?
+Answer: Class methods are methods that are bound to the class and not the instance of the class. They are defined using the @classmethod decorator and take cls as the first parameter.
+
+21.What is the difference between class methods and static methods?
+Answer: Class methods receive a reference to the class (cls) as the first parameter, allowing them to modify class state. Static methods do not receive an implicit first argument and cannot modify object or class state.
+
+22.What is a metaclass in Python?
+Answer: A metaclass is a class of a class that defines how a class behaves. A class is an instance of a metaclass.
+
+23.What is duck typing in Python?
+Answer: Duck typing is a concept where the type or class of an object is less important than the methods it defines. If an object behaves like a duck (supports certain methods and operations), it can be used as a duck.
+
+24.How is data hiding achieved in Python?
+Answer: Data hiding is achieved using private variables, which are prefixed with double underscores (__). This makes them inaccessible from outside the class.
+
+25.What is operator overloading?
+Answer: Operator overloading is the ability to define how operators (+, -, etc.) behave with user-defined types. In Python, this is done by defining special methods like __add__, __sub__, etc.
+
+26.What is the purpose of the super() function in Python?
+Answer: The super() function is used to call the method of the parent class. It is commonly used to extend the functionality of inherited methods.
+
+27.What is method resolution order (MRO) in Python?
+Answer: Method Resolution Order (MRO) is the order in which Python looks for a method in a hierarchy of classes. It is especially important in multiple inheritance to determine the method calling order.
+
+28.What is the use of the __repr__ method in Python?
+Answer: The __repr__ method is used to provide a string representation of an object that is useful for debugging. It is called by the repr() function and the interactive interpreter.
+
+29.How does Python handle memory management in OOP?
+Answer: Python uses automatic memory management, with garbage collection to reclaim memory used by objects that are no longer needed. It uses reference counting and cyclic garbage collector to manage memory efficiently.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
