@@ -294,6 +294,53 @@ Explanation: These are function parameters that allow you to pass a variable num
                                        
                                        greet(name='Alice', age=25)   # Output: name: Alice \n age: 25
 
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+1.How memory is managed in Python?
+Ans:Python memory is managed by Python private heap space. All Python objects and data structures are located in a private heap. The programmer 
+    does not have an access to this private heap and interpreter takes care of this Python private heap. The allocation of Python heap space for 
+    Python objects is done by Python memory manager.
+
+2.What are Python decorators ?
+A decorator is a design pattern in Python that allows a user to add new functionality to an existing object without modifying its structure. Decorators are typically applied to functions, and they play a crucial role in enhancing or modifying the behavior of functions.
+
+A Python decorator is a function that takes another function as an argument and returns a new function. The new function can then be used to replace the original function. Decorators are often used to add additional functionality to existing functions
+
+3.what is python generator?
+A Python generator function is a function that can be used to generate a sequence of values. Generator functions are similar to regular functions, but they use the yield keyword instead of the return keyword. When a generator function is called, it returns an iterator object
+
+4.diff range and xrange.
+One of the key differences between range() and xrange() lies in their memory usage. Since range() generates a list, it consumes more memory, especially when dealing with a large sequence of numbers. On the other hand, xrange() generates numbers on demand, making it a more memory-friendly option.
+
+5.diff deepcopy and shallowcopy
+shallow copy:Shallow Copy stores the references of objects to the original memory address.
+             Shallow Copy reflects changes made to the new/copied object in the original object.
+             A shallow copy is faster.
+deep copy:Deep copy stores copies of the object’s value.
+          Deep copy doesn’t reflect changes made to the new/copied object in the original object.
+          Deep copy is comparatively slower.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
