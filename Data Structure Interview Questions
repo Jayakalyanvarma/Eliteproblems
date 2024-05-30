@@ -144,3 +144,34 @@ isFull (Check if the queue is full) [Relevant for fixed-size queues]:
 Time Complexity: O(1).
 Size (Get the number of elements in the queue):
 Time Complexity: O(1).
+
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+
+TREES
+
+What is a tree data structure?
+Answer: A tree is a hierarchical data structure that consists of nodes connected by edges. Each node has a value and may also have a list of references to its child nodes.
+
+What are the common types of trees?
+Answer: Common types of trees include:
+Binary Tree
+Binary Search Tree (BST)
+AVL Tree
+Red-Black Tree
+B-Tree
+Trie
+Segment Tree
+Heap
+
+What is a binary tree?
+Answer: A binary tree is a tree data structure in which each node has at most two children, referred to as the left child and the right child.
+
+What is a binary search tree (BST)?
+Answer: A binary search tree is a binary tree in which for each node, all nodes in the left subtree have values less than the node's value, and all nodes in the right subtree have values greater than the node's value.
+
+What is a balanced tree?
+Answer: A balanced tree is a binary search tree in which the difference in height between the left and right subtrees of any node is at most one. Examples of balanced trees include AVL trees and Red-Black trees.
+
+What is a traversal in a tree?
+Answer: Traversal refers to visiting all the nodes of a tree in a specific order. Common tree traversal algorithms include in-order, pre-order, post-order, and level-order traversal.
