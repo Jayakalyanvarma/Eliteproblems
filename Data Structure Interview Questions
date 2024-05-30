@@ -1,0 +1,146 @@
+Stack
+Q: What is a stack?
+A: A stack is a linear data structure that follows the Last In, First Out (LIFO) principle.
+
+Q: How does the push operation work in a stack?
+A: The push operation adds an element to the top of the stack.
+
+Q: How does the pop operation work in a stack?
+A: The pop operation removes the top element from the stack.
+
+Q: What is a stack overflow?
+A: A stack overflow occurs when you try to push an element onto a full stack (if there's a size limit).
+
+Q: What is a stack underflow?
+A: A stack underflow occurs when you try to pop an element from an empty stack.
+
+Q: What is the time complexity of push and pop operations in a stack?
+A: Both push and pop operations have O(1) time complexity.
+
+Q: What is the difference between a stack and a queue?
+A: A stack uses LIFO (Last In, First Out) while a queue uses FIFO (First In, First Out).
+
+Q: Give an example of a real-world application of a stack.
+A: Function call management in programming languages uses a stack.
+
+Q: What is the peek operation in a stack?
+A: The peek operation returns the top element of the stack without removing it.
+
+Q: How can a stack be implemented?
+A: A stack can be implemented using an array or a linked list.
+
+Queue
+Q: What is a queue?
+A: A queue is a linear data structure that follows the First In, First Out (FIFO) principle.
+
+Q: How does the enqueue operation work in a queue?
+A: The enqueue operation adds an element to the end of the queue.
+
+Q: How does the dequeue operation work in a queue?
+A: The dequeue operation removes the element from the front of the queue.
+
+Q: What is the time complexity of enqueue and dequeue operations in a queue?
+A: Both enqueue and dequeue operations have O(1) time complexity.
+
+Q: What is a circular queue?
+A: A circular queue is a type of queue where the last position is connected back to the first position to make a circle.
+
+Q: What is a priority queue?
+A: A priority queue is a type of queue where each element is associated with a priority and the element with the highest priority is served first.
+
+Q: Give an example of a real-world application of a queue.
+A: Printer queue management where print jobs are processed in the order they are received.
+
+Q: How can a queue be implemented?
+A: A queue can be implemented using an array, linked list, or two stacks.
+
+Q: What is a double-ended queue (deque)?
+A: A deque is a linear data structure that allows insertion and deletion from both ends.
+
+Q: What is the difference between a linear queue and a circular queue?
+A: In a linear queue, the last element does not connect to the first, while in a circular queue, the last element connects back to the first element.
+
+Linked List
+Q: What is a linked list?
+A: A linked list is a linear data structure where each element is a separate object called a node, and each node contains a data part and a reference (or link) to the next node in the sequence.
+
+Q: What are the types of linked lists?
+A: There are three main types of linked lists: singly linked list, doubly linked list, and circular linked list.
+
+Q: What is a singly linked list?
+A: A singly linked list is a type of linked list where each node points to the next node and the last node points to null.
+
+Q: What is a doubly linked list?
+A: A doubly linked list is a type of linked list where each node has two links, one to the next node and another to the previous node.
+
+Q: What is a circular linked list?
+A: A circular linked list is a type of linked list where the last node points back to the first node, forming a circle.
+
+Q: How do you insert a node at the beginning of a singly linked list?
+A: Create a new node, set its next pointer to the current head, and update the head to the new node.
+
+Q: How do you insert a node at the end of a singly linked list?
+A: Traverse to the last node, create a new node, set the next pointer of the last node to the new node.
+
+Q: How do you delete a node from a singly linked list?
+A: Adjust the pointers of the previous node to skip the current node, then delete the current node.
+
+Q: What is the time complexity of inserting and deleting a node in a singly linked list?
+A: Both operations have O(1) time complexity for insertion and deletion if the node's position is known. Traversing to the node takes O(n).
+
+Q: How do you find the middle element of a linked list?
+A: Use two pointers: move one pointer one step at a time (slow) and the other pointer two steps at a time (fast). When the fast pointer reaches the end, the slow pointer will be at the middle.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------
+STACK
+We can perform the two operations in the stack - PUSH and POP. 
+The PUSH operation is when we add an element and the POP operation is when we remove an element from the stack.
+
+Methods of Stack
+Python provides the following methods that are commonly used with the stack.
+
+empty() - It returns true, it the stack is empty. The time complexity is O(1).
+size() - It returns the length of the stack. The time complexity is O(1).
+top() - This method returns an address of the last element of the stack. The time complexity is O(1).
+push(g) - This method adds the element 'g' at the end of the stack - The time complexity is O(1).
+pop() - This method removes the topmost element of the stack. The time complexity is O(1).
+
+We can implement a stack in Python in the following ways.
+List
+dequeu
+LifeQueue
+
+--------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
+
+QUEUE
+
+Basic operations we can do on a queue are:
+
+Enqueue: Adds a new element to the queue.
+Dequeue: Removes and returns the first (front) element from the queue.
+Peek: Returns the first element in the queue.
+isEmpty: Checks if the queue is empty.
+Size: Finds the number of elements in the queue.
+
+Enqueue (Add an element to the queue):
+Time Complexity:
+For a standard list-based implementation: O(1) amortized.
+For a linked-list-based implementation: O(1).
+
+Dequeue (Remove an element from the front of the queue):
+Time Complexity:
+For a standard list-based implementation: O(n), where n is the number of elements in the queue.
+For a linked-list-based implementation: O(1).
+
+Peek (Get the element at the front of the queue without removing it):
+Time Complexity: O(1).
+
+isEmpty (Check if the queue is empty):
+Time Complexity: O(1).
+
+isFull (Check if the queue is full) [Relevant for fixed-size queues]:
+Time Complexity: O(1).
+Size (Get the number of elements in the queue):
+Time Complexity: O(1).
