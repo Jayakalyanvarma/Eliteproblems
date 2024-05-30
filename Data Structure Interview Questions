@@ -62,7 +62,7 @@ A: In a linear queue, the last element does not connect to the first, while in a
 
 Linked List
 Q: What is a linked list?
-A: A linked list is a linear data structure where each element is a separate object called a node, and each node contains a data part and a reference (or link) to the next node in the sequence.
+A: A linked list is a type of linear data structure similar to arrays. It is a collection of nodes that are linked with each other. A node contains two things first is data and second is a link that connects it with another node.
 
 Q: What are the types of linked lists?
 A: There are three main types of linked lists: singly linked list, doubly linked list, and circular linked list.
@@ -118,7 +118,7 @@ QUEUE
 
 Basic operations we can do on a queue are:
 
-Enqueue: Adds a new element to the queue.
+Enqueue: Adds a new element back to the queue.
 Dequeue: Removes and returns the first (front) element from the queue.
 Peek: Returns the first element in the queue.
 isEmpty: Checks if the queue is empty.
