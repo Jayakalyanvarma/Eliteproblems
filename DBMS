@@ -29,3 +29,14 @@ Normal Form	      Description
 BCNF	            A stronger definition of 3NF is known as Boyce Codd's normal form.
 4NF	              A relation will be in 4NF if it is in Boyce Codd's normal form and has no multi-valued dependency.
 5NF	              A relation is in 5NF. If it is in 4NF and does not contain any join dependency, joining should be lossless.
+
+
+2.What is a View?
+  View is a virtual table in which the records are not stored explicitly, 
+  In DBMS, a view is a virtual table that provides a way to present data from one or more tables through a single query without storing the data itself.
+
+What is a materialized view?
+A materialized view is a duplicate data table created by combining data from multiple existing tables for faster data retrieval.
+
+what is stored procedure?
+A stored procedure in SQL is a group of SQL queries that can be saved and reused multiple times. It is very useful as it reduces the need for rewriting SQL queries. It enhances efficiency, reusability, and security in database management.
