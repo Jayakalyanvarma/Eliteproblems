@@ -1,0 +1,217 @@
+What is a computer network?
+Answer: A computer network is a group of interconnected computers that communicate with each other and share resources, such as files, printers, and internet connections.
+
+What are the types of computer networks?
+Answer: The main types are Local Area Network (LAN), Wide Area Network (WAN), Metropolitan Area Network (MAN), and Personal Area Network (PAN).
+LAN(Local Area Network)
+Local Area Network is a group of computers connected to each other in a small area such as building, office.
+PAN(Personal Area Network)
+Personal Area Network is a network arranged within an individual person, typically within a range of 10 meters.
+MAN(Metropolitan Area Network)
+A metropolitan area network is a network that covers a larger geographic area by interconnecting a different LAN to form a larger network.
+WAN(Wide Area Network)
+A Wide Area Network is a network that extends over a large geographical area such as states or countries.
+A Wide Area Network is quite bigger network than the LAN.
+
+what is network topology?
+Network topology is the physical or logical arrangement of devices and connections in a network. It defines how devices are connected to each other and how data flows through the network.
+Bus Topology:
+Description: In a bus topology, all devices are connected to a single central cable, known as the bus or backbone.
+Advantages:
+Easy to install and extend.
+Requires less cable than other topologies.
+Disadvantages:
+Difficult to troubleshoot.
+A failure in the main cable stops all transmission.
+
+Star Topology:
+Description: In a star topology, all devices are connected to a central hub or switch. The hub acts as a repeater for data flow.
+Advantages:
+Easy to install and manage.
+Failure of one node does not affect the rest of the network.
+Easy to detect faults and to remove parts.
+Disadvantages:
+Requires more cable than bus topology.
+If the central hub fails, the entire network is inoperative.
+Higher cost due to the use of hub/switch.
+
+Ring Topology:
+Description: In a ring topology, each device is connected to two other devices, forming a circular pathway for signals. Data travels in one direction.
+Advantages:
+Data is transferred in a sequential manner, making it easy to manage.
+Better performance than bus topology under heavy load.
+Disadvantages:
+A failure in any cable or device can disrupt the entire network.
+Troubleshooting is difficult.
+Adding or removing devices can cause issues.
+
+Mesh Topology:
+Description: In a mesh topology, each device is connected to every other device in the network. There are two types: full mesh and partial mesh.
+Advantages:
+Provides high redundancy and reliability.
+Data can be transmitted simultaneously from different devices.
+Easy to identify and isolate faults.
+Disadvantages:
+Requires a lot of cables and I/O ports, making it expensive.
+Complex and difficult to install and configure.
+
+Tree Topology:
+Description: Tree topology is a combination of star and bus topologies. Groups of star-configured networks are connected to a linear bus backbone.
+Advantages:
+Supports future expandability of the network.
+Fault isolation is easy.
+Suitable for large networks.
+Disadvantages:
+If the backbone line breaks, the entire segment goes down.
+More difficult to configure and wire than other topologies.
+
+Hybrid Topology:
+Description: A hybrid topology is a combination of two or more different types of topologies, designed to leverage the advantages of each.
+Advantages:
+Flexible and scalable.
+Reliable due to the combination of topologies.
+
+What is a protocol?
+Answer: A protocol is a set of rules and conventions for communication between network devices. Protocols define how data is transmitted and received over a network.
+
+What is the OSI model?
+Answer:OSI stands for Open System Interconnection is a reference model that describes how information from a software application in one computer moves through a physical medium to the software application in another computer.
+OSI consists of seven layers, and each layer performs a particular network function. divided into seven layers: Physical, Data Link, Network, Transport, Session, Presentation, and Application.
+
+What is the TCP/IP model?
+Answer: The TCP/IP model is a set of communication protocols used on the internet, consisting of four layers: Data Link, Internet, Transport, and Application.
+
+What is an IP address?
+Answer: An IP address (Internet Protocol address) is a unique identifier assigned to each device connected to a network that uses the Internet Protocol for communication.
+
+What are the differences between IPv4 and IPv6?
+Answer: IPv4 uses 32-bit addresses allowing for 4.3 billion unique addresses, whereas IPv6 uses 128-bit addresses allowing for a vastly larger number of addresses. IPv6 also includes features like improved security and better address auto-configuration.
+
+What is a subnet mask?
+Answer: A subnet mask is a 32-bit number that divides an IP address into network and host parts, used to identify the network segment on which an IP address resides.
+
+What is a MAC address?
+Answer: A MAC (Media Access Control) address is a unique identifier assigned to a network interface card (NIC) MAC address is the physical address, which uniquely identifies each device on a given network. To make communication between two networked devices,
+
+What is DHCP?
+Answer: DHCP (Dynamic Host Configuration Protocol) is a network management protocol used to dynamically assign IP addresses and other network configuration parameters to devices on a network.
+
+What is DNS?
+Answer: DNS (Domain Name System) is a hierarchical system that translates human-readable domain names (like www.example.com) into IP addresses.
+
+What is ARP?
+Answer: ARP (Address Resolution Protocol) is a protocol used to map an IP address to a physical MAC address on a local area network.
+
+What is a router?
+Answer: A router is a network device that forwards data packets between computer networks, performing traffic directing functions.
+
+What is a switch?
+Answer: A switch is a networking device that connects devices within a single network, using MAC addresses to forward data to the correct destination.
+
+what is hub?
+A hub is a network hardware device that connects multiple devices together and acts as a central connection point within a local area network (LAN). 
+
+What is the difference between a hub and a switch?
+Answer: A hub broadcasts data to all devices in a network segment, while a switch intelligently sends data only to the device to which it is addressed, making switches more efficient.
+
+What is a firewall?
+Answer: A firewall is a network security device that monitors and controls incoming and outgoing network traffic based on predetermined security rules.
+
+What is NAT?
+Answer: NAT (Network Address Translation) is a method used to remap one IP address space into another by modifying network address information in the IP header while the packets are in transit.
+
+What is VPN?
+Answer: VPN stands for Virtual Private Network. It allows you to connect your computer to a private network, creating an encrypted connection that masks your IP address to securely share data and surf the web, protecting your identity online.
+
+What is a VLAN?
+Answer: A virtual local area network (VLAN) is a virtualized connection that allows multiple devices and network nodes from different LANs to be connected into a single logical network.
+
+What is the difference between TCP and UDP?
+Answer: TCP (Transmission Control Protocol) is connection-oriented and ensures reliable data transmission, while UDP (User Datagram Protocol) is connectionless and faster but does not guarantee delivery.
+
+What is SSL/TLS?
+Answer: SSL (Secure Sockets Layer) and TLS (Transport Layer Security) are cryptographic protocols designed to provide secure communication over a computer network.
+
+What is an SSID?
+Answer: An SSID (Service Set Identifier) is a unique identifier that names a wireless local area network (WLAN).
+
+What is the purpose of a gateway?
+Answer: A gateway is a network node that serves as an access point to another network, often used to connect different network architectures and protocols.
+What is a BGP?
+
+Answer: BGP (Border Gateway Protocol) is a standardized exterior gateway protocol used to exchange routing information between different autonomous systems on the internet.
+What is an MPLS?
+
+Answer: MPLS (Multiprotocol Label Switching) is a technique used to speed up and shape network traffic flows across enterprise wide area networks and service provider networks.
+
+What is a proxy server?
+Answer: A proxy server is an intermediary server separating end users from the websites they browse, providing varying levels of functionality, security, and privacy.
+What is QoS?
+
+Answer: QoS (Quality of Service) refers to the overall performance of a network or the quality of service guarantees provided to data flows, often involving prioritization of certain types of traffic.
+
+What is a network topology?
+Answer: Network topology refers to the arrangement of different elements (links, nodes, etc.) in a computer network. Common topologies include star, ring, bus, mesh, and hybrid.
+
+What is an ISP?
+Answer: An ISP (Internet Service Provider) is a company that provides individuals and organizations access to the internet and other related services.
+
+What is ICMP?
+Answer: ICMP (Internet Control Message Protocol) is used by network devices, like routers, to send error messages and operational information, such as whether a service is available or a host can be reached.
+
+What is the difference between a modem and a router?
+Answer: A modem modulates and demodulates signals for internet access, while a router directs data packets between devices in a network.
+
+What is a network interface card (NIC)?
+Answer: A NIC is a hardware component that connects a computer to a network, enabling communication with other networked devices.
+
+What is PoE?
+Answer: PoE (Power over Ethernet) is a technology that allows network cables to carry electrical power, enabling devices like IP cameras and wireless access points to receive power and data through the same cable.
+
+What is network latency?
+Answer: Network latency is the time it takes for data to travel from the source to the destination across a network.
+
+
+What is a network packet?
+Answer: A network packet is a formatted unit of data carried by a packet-switched network, containing both control information and user data.
+
+What is a port number?
+Answer: A port number is a numerical identifier in networking used to distinguish different services or processes on a single device, such as HTTP (port 80) or FTP (port 21).
+
+What is the purpose of a subnet?
+Answer: Subnetting divides a large network into smaller, more manageable sub-networks, improving performance and security by isolating segments.
+
+What is a load balancer?
+Answer: A load balancer distributes network or application traffic across multiple servers to ensure no single server becomes overwhelmed, enhancing the availability and reliability of applications.
+What is a mesh network?
+
+Answer: A mesh network is a network topology where nodes connect directly, dynamically, and non-hierarchically to as many other nodes as possible, enabling efficient data routing and redundancy.
+
+What is the three-way handshake in TCP?
+Answer: The three-way handshake is a method used in TCP/IP networks to establish a connection between a client and server, involving SYN, SYN-ACK, and ACK packets.
+
+What is a broadcast domain?
+Answer: A broadcast domain is a network segment where a broadcast frame is forwarded to all devices within that segment but not to any devices outside of it.
+
+What is a collision domain?
+Answer: A collision domain is a network segment where data packets can collide with each other when being sent on a shared medium or through repeaters.
+
+What is a network protocol analyzer?
+Answer: A network protocol analyzer is a tool used to capture, analyze, and decode network traffic for troubleshooting and monitoring purposes. Wireshark is a popular example.
+
+What is the purpose of network security?
+Answer: Network security involves policies and practices designed to protect the integrity, confidentiality, and availability of networked systems and data from unauthorized access, misuse, or attacks.
+
+What is a default gateway?
+Answer: A default gateway is a node that routes traffic from a local network to devices on other networks, typically through a router.
+What is the purpose of DNS caching?
+Answer: DNS caching stores DNS query results locally to speed up the resolution of domain names and reduce the load on DNS servers.
+
+What is an IDS/IPS?
+Answer: IDS (Intrusion Detection System) monitors network traffic for suspicious activity, while IPS (Intrusion Prevention System) actively prevents and blocks intrusions.
+
+What is a network socket?
+Answer: A network socket is an endpoint for sending or receiving data across a computer network, defined by an IP address and port number.
+
+What is port forwarding?
+Answer: Port forwarding is a network configuration that directs incoming traffic from a specific port on an external IP address to a specific port and IP address within a local network, commonly used for remote access to services.
