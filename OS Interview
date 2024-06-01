@@ -101,19 +101,38 @@ Program contains instructions 	                                                 
   deadlock can be prevented by eliminating any of the four necessary conditions, which are mutual exclusion, hold and wait, no preemption, and circular wait. 
 
 10.what are deadlock avoidance Algorithm?
-Deadlock avoidance algorithms are techniques used to dynamically allocate resources to processes in such a way that deadlocks are prevented from occurring.
-1. Banker's Algorithm:
-Description: Banker's algorithm is a resource allocation algorithm that ensures that the system will never enter a deadlock state by carefully managing the allocation of resources.
-2. Resource Allocation Graph (RAG):
-Description: Resource Allocation Graph is a graphical representation used to track the allocation and request of resources by processes.
+  Deadlock avoidance algorithms are techniques used to dynamically allocate resources to processes in such a way that deadlocks are prevented from occurring.
+  1. Banker's Algorithm:
+  Description: Banker's algorithm is a resource allocation algorithm that ensures that the system will never enter a deadlock state by carefully managing the allocation of resources.
+  2. Resource Allocation Graph (RAG):
+  Description: Resource Allocation Graph is a graphical representation used to track the allocation and request of resources by processes.
 
 11.explain dead lock recovery Algorithms?
-Deadlock recovery algorithms are techniques used to recover from deadlock situations once they have occurred.
-1. Process Termination and Rollback:
-Description: In this approach, one or more processes involved in the deadlock are selected for termination. The terminated processes release their held resources, allowing other processes to continue execution.
-Rollback: If a process is terminated, its state may need to be rolled back to a safe checkpoint to maintain consistency.
-2. Resource Preemption:
-Description: Resources held by processes involved in the deadlock are forcibly preempted and allocated to other processes.
+  Deadlock recovery algorithms are techniques used to recover from deadlock situations once they have occurred.
+  1. Process Termination and Rollback:
+  Description: In this approach, one or more processes involved in the deadlock are selected for termination. The terminated processes release their held resources, allowing other processes to continue execution.
+  Rollback: If a process is terminated, its state may need to be rolled back to a safe checkpoint to maintain consistency.
+  2. Resource Preemption:
+  Description: Resources held by processes involved in the deadlock are forcibly preempted and allocated to other processes.
 
+12.explain semaphores?
+  Semaphores are just normal variables used to coordinate the activities of multiple processes in a computer system. They are used to      enforce mutual exclusion, avoid race conditions, and implement synchronization between processes.
+  The process of using Semaphores provides two operations: wait (P) and signal (V). The wait operation decrements the value of the     
+  semaphore, and the signal operation increments the value of the semaphore.
+
+13.what is memory management?
+  Memory management is the process of controlling and coordinating a computer's main memory. It ensures that blocks of memory space are properly managed and allocated so the operating system (OS), applications and other running processes
+
+14.explain pagging?
+ Paging is a storage mechanism used to retrieve processes from the secondary storage into the main memory in the form of pages.The main   idea behind the paging is to divide each process in the form of pages.
+
+15.explain segmentation?
+  Segmentation is a memory management technique in which the memory is divided into the variable size parts. Each part is known as a     
+  segment which can be allocated to a process.
+  The details about each segment are stored in a table called a segment table. Segment table is stored in one (or many) of the segments.
+  Segment table contains mainly two information about segment:
+  Base: It is the base address of the segment
+  Limit: It is the length of the segment.
+    
 
 
