@@ -1,5 +1,5 @@
 1. What is an operating system?
-  Operating System is an interface between the user and the computer hardware.It is responsible for the execution of all the processes, Resource Allocation, CPU management, File            Management    
+  Operating System is an interface between the user and the computer hardware.It is responsible for the execution of all the processes, Resource Allocation, CPU management, FileManagement    
 Key Functions:
 Process Management: Controls the execution of processes, including task scheduling, process creation and termination, and multitasking.
 Memory Management: Manages the computer's memory, allocating space for programs and data and ensuring efficient utilization and protection of memory resources.
