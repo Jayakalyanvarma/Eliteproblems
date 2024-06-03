@@ -1,0 +1,18 @@
+Speech-to-Text Conversion:-
+
+we developed an automated system for converting text files to speech using AWS services. Essentially, the goal was to make text-based content more accessible through audio format.
+
+1.)Firstly, we utilized AWS S3, which is Amazon's Simple Storage Service, for storing and uploading the text files. S3 provides secure, scalable, and highly durable object storage.
+
+2.)AWS Lambda is configured to trigger upon file upload to AWS S3. This means that whenever a new text file is uploaded to a specific S3 bucket, Lambda is automatically invoked.
+
+3.) Whenever Lambda detected a new file in S3,The Lambda function communicates with Polly to pass the text content to the AWS Polly.
+
+4.)Polly is a AWS Service,Polly performs the text-to-speech conversion using its advanced algorithms.
+
+5.)Once the speech synthesis is complete, Lambda stores the generated speech files back into AWS S3. This ensures that the converted speech files are easily accessible and can be retrieved as needed.
+
+
+The primary use of this project is to enhance accessibility for individuals with disabilities, particularly those with visual impairments or learning disabilities. By converting text files to speech, the project makes textual content accessible through audio format, ensuring inclusivity and equal access to information.
+
+
