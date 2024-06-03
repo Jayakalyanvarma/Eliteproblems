@@ -16,3 +16,27 @@ we developed an automated system for converting text files to speech using AWS s
 The primary use of this project is to enhance accessibility for individuals with disabilities, particularly those with visual impairments or learning disabilities. By converting text files to speech, the project makes textual content accessible through audio format, ensuring inclusivity and equal access to information.
 
 
+Water Quality Classification Using Machine Learning:-
+
+ using the k-Nearest Neighbors (k-NN) algorithm to classify water as safe or unsafe to drink.
+
+1. Data Loading
+The first step is to load the dataset containing water quality parameters. This dataset typically includes various chemical and physical properties of water samples, such as pH, hardness, solids, chloramines, sulfate, conductivity, organic carbon, trihalomethanes, turbidity, and whether the water is safe to drink.
+
+2. Data Preprocessing
+Data preprocessing involves cleaning the data, handling missing values,
+
+3. Data Visualization
+Visualizing the data helps to understand the distribution and relationships between features. Common visualizations include histograms, scatter plots, and correlation matrices.
+
+4. Model Building
+ Developed a machine learning model by selecting an KNN Algorithm,training it on the preprocessed data. 
+
+5. Model Evaluation
+Evaluating the model involves using metrics such as accuracy, precision, recall, and the F1 score.
+
+
+
+
+
+
