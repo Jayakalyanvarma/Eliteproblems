@@ -64,5 +64,42 @@ The java instanceof operator is used to test whether the object is an instance o
 The interface in Java is a mechanism to achieve abstraction. There can be only abstract methods in the Java interface, not method body. It is used to achieve abstraction and multiple inheritance in Java.
 In other words, you can say that interfaces can have abstract methods and variables. It cannot have a method body.
 
+multi threading in java
+-------------------------
+Thread:A Thread is a very light-weighted process, or we can say the smallest part of the process that allows a program to operate more efficiently by running multiple tasks simultaneously.
+
+Multi Threading:Multithreading in Java is a process of executing multiple threads simultaneously.
+
+16.explain types of constructers in java?
+There are two types of constructors in Java:
+Default constructor (no-arg constructor):A constructor is called "Default Constructor" when it doesn't have any parameter.
+Parameterized constructor:A constructor which has a specific number of parameters is called a parameterized constructor.
+
+17.explain string and stringBuffer in java:
+Definition: String is a class in Java that represents an immutable sequence of characters. Once a String object is created, its value cannot be changed.
+Defination:StringBuffer is mutable, allowing modifications like additions, deletions, and alterations without creating new objects each time.
+Methods of the String class:
+charAt(int index): Returns the character at the specified index.
+length(): Returns the length of the string.
+substring(int beginIndex, int endIndex): Returns a substring from the specified begin index to the end index (exclusive).
+toLowerCase(): Converts all characters in the string to lowercase.
+toUpperCase(): Converts all characters in the string to uppercase.
+isEmpty(): Returns true if the string is empty.
+
+Methods of the StringBuffer class:
+append(String str): Appends the specified string to the end of the buffer.
+insert(int offset, String str): Inserts the specified string into the buffer at the specified position.
+reverse(): Reverses the characters in the buffer.
+replace(int start, int end, String str): Replaces characters in the buffer between the specified start and end indices with the specified string.
+
+Explain Exception handling in Java?
+try-catch-finally:
+The try block is used to enclose the code that might throw an exception.
+The catch block is used to handle the exception. It catches the exception thrown by the try block.
+The finally block is used to execute important code such as closing resources, regardless of whether an exception is thrown or not. It executes after the try block or after the catch block.
+
+The throw keyword in Java is used to explicitly throw an exception from a method or any block of code.
+throws is a keyword in Java that is used in the signature of a method to indicate that this method might throw one of the listed type exceptions. 
+
 
 
