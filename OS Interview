@@ -7,7 +7,7 @@ File System Management: Provides a way to store, retrieve, and organize files on
 Device Management: Manages device communication via drivers, enabling the OS to interact with peripheral devices like printers, scanners, and network cards.
 User Interface: Provides a way for users to interact with the computer, either through a command-line interface (CLI) or a graphical user interface (GUI).and many other tasks.
 
-main purpose:
+main purpose: 
 The main purpose of an operating system (OS) is to make a computer system convenient and efficient to use
 
 2.Explain types of OS?
