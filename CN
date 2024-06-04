@@ -78,6 +78,32 @@ What is the OSI model?
 Answer:OSI stands for Open System Interconnection is a reference model that describes how information from a software application in one computer moves through a physical medium to the software application in another computer.
 OSI consists of seven layers, and each layer performs a particular network function. divided into seven layers: Physical, Data Link, Network, Transport, Session, Presentation, and Application.
 
+1.physical layer:
+The main functionality of the physical layer is to transmit the individual bits from one node to another node.
+It is the lowest layer of the OSI model.
+Functions of a Physical layer:
+Line Configuration: It defines the way how two or more devices can be connected physically.
+Data Transmission: It defines the transmission mode whether it is simplex, half-duplex or full-duplex mode between the two devices on the network.
+Topology: It defines the way how network devices are arranged.
+Signals: It determines the type of the signal used for transmitting the information.
+
+2.Data Link Layer:
+This layer is responsible for the error-free transfer of data frames.
+It defines the format of the data on the network.
+It provides a reliable and efficient communication between two or more devices.
+It is mainly responsible for the unique identification of each device that resides on a local network.
+It contains two sub-layers:
+a.Logical Link Control Layer
+It is responsible for transferring the packets to the Network layer of the receiver that is receiving.
+It identifies the address of the network layer protocol from the header.
+It also provides flow control.
+b.Media Access Control Layer
+A Media access control layer is a link between the Logical Link Control layer and the network's physical layer.
+It is used for transferring the packets over the network.
+
+3.Network Layer:
+
+
 What is the TCP/IP model?
 Answer: The TCP/IP model is a set of communication protocols used on the internet, consisting of four layers: Data Link, Internet, Transport, and Application.
 
@@ -137,18 +163,9 @@ Answer: An SSID (Service Set Identifier) is a unique identifier that names a wir
 
 What is the purpose of a gateway?
 Answer: A gateway is a network node that serves as an access point to another network, often used to connect different network architectures and protocols.
-What is a BGP?
-
-Answer: BGP (Border Gateway Protocol) is a standardized exterior gateway protocol used to exchange routing information between different autonomous systems on the internet.
-What is an MPLS?
-
-Answer: MPLS (Multiprotocol Label Switching) is a technique used to speed up and shape network traffic flows across enterprise wide area networks and service provider networks.
 
 What is a proxy server?
 Answer: A proxy server is an intermediary server separating end users from the websites they browse, providing varying levels of functionality, security, and privacy.
-What is QoS?
-
-Answer: QoS (Quality of Service) refers to the overall performance of a network or the quality of service guarantees provided to data flows, often involving prioritization of certain types of traffic.
 
 What is a network topology?
 Answer: Network topology refers to the arrangement of different elements (links, nodes, etc.) in a computer network. Common topologies include star, ring, bus, mesh, and hybrid.
@@ -165,12 +182,8 @@ Answer: A modem modulates and demodulates signals for internet access, while a r
 What is a network interface card (NIC)?
 Answer: A NIC is a hardware component that connects a computer to a network, enabling communication with other networked devices.
 
-What is PoE?
-Answer: PoE (Power over Ethernet) is a technology that allows network cables to carry electrical power, enabling devices like IP cameras and wireless access points to receive power and data through the same cable.
-
 What is network latency?
 Answer: Network latency is the time it takes for data to travel from the source to the destination across a network.
-
 
 What is a network packet?
 Answer: A network packet is a formatted unit of data carried by a packet-switched network, containing both control information and user data.
@@ -183,18 +196,13 @@ Answer: Subnetting divides a large network into smaller, more manageable sub-net
 
 What is a load balancer?
 Answer: A load balancer distributes network or application traffic across multiple servers to ensure no single server becomes overwhelmed, enhancing the availability and reliability of applications.
-What is a mesh network?
 
+What is a mesh network?
 Answer: A mesh network is a network topology where nodes connect directly, dynamically, and non-hierarchically to as many other nodes as possible, enabling efficient data routing and redundancy.
 
 What is the three-way handshake in TCP?
 Answer: The three-way handshake is a method used in TCP/IP networks to establish a connection between a client and server, involving SYN, SYN-ACK, and ACK packets.
 
-What is a broadcast domain?
-Answer: A broadcast domain is a network segment where a broadcast frame is forwarded to all devices within that segment but not to any devices outside of it.
-
-What is a collision domain?
-Answer: A collision domain is a network segment where data packets can collide with each other when being sent on a shared medium or through repeaters.
 
 What is a network protocol analyzer?
 Answer: A network protocol analyzer is a tool used to capture, analyze, and decode network traffic for troubleshooting and monitoring purposes. Wireshark is a popular example.
@@ -215,3 +223,41 @@ Answer: A network socket is an endpoint for sending or receiving data across a c
 
 What is port forwarding?
 Answer: Port forwarding is a network configuration that directs incoming traffic from a specific port on an external IP address to a specific port and IP address within a local network, commonly used for remote access to services.
+
+Transport Layer protocols.
+The transport layer is represented by two protocols: TCP and UDP.
+UDP:
+UDP stands for User Datagram Protocol.
+UDP is a simple protocol and it provides nonsequenced transport functionality.
+UDP is a connectionless protocol.
+This type of protocol is used when reliability and security are less important than speed and size.
+
+TCP
+TCP stands for Transmission Control Protocol.
+It provides full transport layer services to applications.
+It is a connection-oriented protocol means the connection established between both the ends of the transmission. For creating the connection, TCP generates a virtual circuit between sender and receiver for the duration of a transmission.
+
+
+Applicstion Layer Protocols:
+
+Http:
+HTTP stands for HyperText Transfer Protocol.
+It is a protocol used to access the data on the World Wide Web (www).
+The HTTP protocol can be used to transfer the data in the form of plain text, hypertext, audio, video, and so on.
+HTTP is similar to the FTP as it also transfers the files from one host to another host.
+
+Ftp:
+FTP stands for File transfer protocol.
+FTP is a standard internet protocol provided by TCP/IP used for transmitting the files from one host to another.
+It is also used for downloading the files to computer from other servers.
+
+Smtp:
+SMTP stands for Simple Mail Transfer Protocol.
+SMTP is a set of communication guidelines that allow software to transmit an electronic mail over the internet is called Simple Mail Transfer Protocol.
+It is a program used for sending messages to other computer users based on e-mail addresses.
+It can send a single message to one or more recipients.
+Sending message can include text, voice, video or graphics.
+
+Ssh:
+SSH stands for Secure Shell or Secure Socket Shell. It is a cryptographic network protocol that allows two computers to communicate and share the data over an insecure network such as the internet. It is used to login to a remote server to execute commands and data transfer from one machine to another machine.
+
