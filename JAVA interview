@@ -1,3 +1,36 @@
+What is Java?
+Java is a high-level, object-oriented programming language developed by Sun Microsystems (now owned by Oracle). It is designed to be platform-independent and follows the principle of "Write Once, Run Anywhere" (WORA).
+
+why java is platform independent?
+Java is platform-independent because it is compiled to a bytecode that can be run on any device that has a Java Virtual Machine (JVM). This means that you can write a Java program on one platform (such as Windows) and then run it on a different platform (such as macOS or Linux) without making any changes to the code.
+
+why java is more secure?
+Java programs run inside a virtual machine which is known as a sandbox.
+Java does not support explicit pointer.
+Byte-code verifier checks the code fragments for illegal code that can violate access right to object.
+It provides java.security package implements explicit security.
+
+What is the purpose of the public static void main(String[] args) method in Java?
+public: This keyword indicates that the method can be accessed by any other class.
+static: This keyword indicates that the method belongs to the class itself rather than to any instance of the class. This means that the method can be called without creating an instance of the class.
+void: This keyword indicates that the method doesn't return any value.
+main: This is the name of the method. It's the conventional name for the method that serves as the entry point of a Java program.
+String[] args: This parameter allows you to pass arguments to the Java program when you run it from the command line. args is an array of strings where each element contains one of the command-line arguments passed to the program.
+
+Can the main method be overloaded?
+Yes, the main method can be overloaded in Java, just like any other method. However, only the main method with the standard signature (public static void main(String[] args)) is recognized as the entry point by the JVM.
+
+What happens if the main method is declared as private or protected?
+If the main method is declared as private or protected, the JVM will not be able to access it, and the program will fail to start. The main method must be declared as public for the JVM to invoke it.\
+
+Can the return type of the main method be changed?
+No, the return type of the main method must always be void. Changing the return type will result in a compilation error.
+
+Can we have multiple main methods in a single class?
+Yes, we can have multiple main methods in a single class. However, only one of them (with the standard signature) will be recognized as the entry point by the JVM.
+
+
+
 1.What is the JVM?
 The Java Virtual Machine (JVM) is an engine that provides a runtime environment to run Java applications. It converts Java bytecode into machine code.
 
@@ -69,6 +102,24 @@ multi threading in java
 Thread:A Thread is a very light-weighted process, or we can say the smallest part of the process that allows a program to operate more efficiently by running multiple tasks simultaneously.
 
 Multi Threading:Multithreading in Java is a process of executing multiple threads simultaneously.
+Thread Methods:
+start(): This method starts the execution of a thread. It invokes the run() method of the thread.
+
+run(): This method contains the code that constitutes the new thread. It needs to be overridden when extending the Thread class or implementing the Runnable interface.This method is the starting point of the thread.
+
+sleep(long milliseconds): This method pauses the execution of the current thread for the specified number of time.
+
+join(): This method waits for a thread to die. It causes the currently executing thread to pause its execution until the thread on which it is called terminates.
+
+interrupt(): This method interrupts the execution of a thread, causing it to finish earlier if it's programmed to handle interrupts.
+isInterrupted(): This method checks whether the current thread has been interrupted.
+
+yield(): The yield() method in Java pauses the currently executing thread to allow other threads of the same priority to run, though there's no guarantee of immediate suspension.
+
+setName(String name): This method sets the name of a thread.
+getName(): This method retrieves the name of a thread.
+
+getState(): This method retrieves the current state of a thread (e.g., NEW, RUNNABLE, BLOCKED, WAITING, TIMED_WAITING, TERMINATED).
 
 16.explain types of constructers in java?
 There are two types of constructors in Java:
@@ -100,6 +151,10 @@ The finally block is used to execute important code such as closing resources, r
 
 The throw keyword in Java is used to explicitly throw an exception from a method or any block of code.
 throws is a keyword in Java that is used in the signature of a method to indicate that this method might throw one of the listed type exceptions. 
+
+pacakages: refer javat point.
+
+
 
 
 
