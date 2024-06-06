@@ -40,6 +40,81 @@ A shell is a command-line interface that allows users to interact with the opera
 What is a GUI?
 GUI stands for Graphical User Interface. It is a visual interface that allows users to interact with the operating system and applications using graphical elements such as windows, icons, menus, and buttons.
 
+what is system call in os?
+A system call is a mechanism used by programs to request services from the operating system (OS).
+A system call is an interface between a program running in user space and the operating system (OS). Application programs use system calls to request services and functionalities from the OS's kernel.
+
+here are several types of system calls, typically categorized based on their functionality. Here are the main types:
+Process Control:
+fork(): Creates a new process by duplicating the calling process.
+exec(): Replaces the current process image with a new process image.
+exit(): Terminates the calling process.
+wait(): Waits for a child process to terminate.
+getpid(): Returns the process ID of the calling process.
+getppid(): Returns the parent process ID.
+File Management:
+open(): Opens a file.
+close(): Closes a file descriptor.
+read(): Reads data from a file.
+write(): Writes data to a file.
+lseek(): Repositions the read/write file offset.
+stat(): Retrieves the status of a file.
+Device Management:
+ioctl(): Manipulates the underlying device parameters.
+read() and write(): Also used for device I/O operations.
+Information Maintenance:
+gettimeofday(): Gets the current time.
+settimeofday(): Sets the current time.
+gethostname(): Gets the name of the current host.
+sethostname(): Sets the name of the current host.
+Communication:
+socket(): Creates a new socket.
+bind(): Associates a socket with an address.
+listen(): Listens for connections on a socket.
+accept(): Accepts a connection on a socket.
+connect(): Initiates a connection on a socket.
+send() and recv(): Send and receive messages.
+Protection:
+chmod(): Changes the permissions of a file.
+chown(): Changes the ownership of a file.
+umask(): Sets the file mode creation mask.
+
+Stucture of operating System.
+
+Monolithic Structure:-
+Description: All OS services (e.g., file system management, process management, memory management) are implemented in a single, large kernel.
+
+Layered Structure:-
+Description: The OS is divided into a number of layers (levels), each built on top of lower layers. Each layer only interacts with the layers directly below and above it.
+
+microkernel"-
+A microkernel is a type of operating system kernel that is designed to provide only the most basic services required for an operating system to function, such as memory management and process scheduling.
+
+Modular Structure:-
+n an OS, a modular structure is an architecture where the system is divided into independent, interchangeable modules,each handling specific functions and interacting through defined interfaces.
+
+What is preemptive and non preemptive Scheduling.
+A preemptive scheduling algorithm is a type of CPU scheduling in which the operating system can interrupt and suspend a currently running process to allocate CPU time to another process.
+
+in non-preemptive scheduling, any new process has to wait until the running process finishes its execution CPU cycle.
+what is PCB?
+A Process Control Block in OS (PCB) is a data structure used by the operating system to manage information about a process.
+It contains information about the process state, memory allocation, CPU usage, I/O devices, and other resources used by the process.
+
+What is IPC?-Inter Process Communication.
+IPC is a mechanism provided by the operating system to allow processes to communicate and synchronize with each other. It enables data exchange, coordination, and synchronization between processes running concurrently.
+
+What are the primary types of communication in IPC?
+Answer: The primary types of communication in IPC are message passing and shared memory.
+
+Explain the difference between message passing and shared memory IPC.
+Answer: Message passing involves processes exchanging messages through the OS, whereas shared memory allows processes to share a region of memory for direct communication.
+
+Explain the concept of sockets in IPC.
+Answer: Sockets are endpoints for communication between processes running on the same or different systems over a network. They provide bidirectional communication, allowing processes to exchange data reliably. Sockets can be used for IPC on the same system (UNIX domain sockets) or between different systems (network sockets).
+
+
+
 2.Explain types of OS?
 
 Batch os:
@@ -163,10 +238,33 @@ Program contains instructions 	                                                 
   2. Resource Preemption:
   Description: Resources held by processes involved in the deadlock are forcibly preempted and allocated to other processes.
 
+Process synchronization:-
+Process synchronization in OS is the task of coordinating the execution of processes in such a way that no two processes can access the same shared data and resources.
+Example Scenario:
+Consider two processes trying to access a shared printer. Process synchronization ensures that only one process prints at a time, preventing conflicts and ensuring the printer's correct operation.
+
+Critical Section:
+Critical section is the part of the code where shared resources are accessed.
+It's crucial to ensure that only one process/thread accesses the critical section at a time to prevent data corruption.
+
+Starvation:
+Starvation occurs when a process is unable to proceed because other processes continually access the critical section.
+Synchronization mechanisms should avoid starvation.
+
+Explain critical section problem with sample example?
+The critical section refers to a specific part of a program where shared resources are accessed, and concurrent execution may lead to conflicts or inconsistencies.
+In a cafeteria scenario, where multiple people are trying to access a limited number of food stations, synchronization is necessary to avoid overcrowding at any one station and ensure fair access to all diners.
+
+
+
 12.explain semaphores?
-  Semaphores are just normal variables used to coordinate the activities of multiple processes in a computer system. They are used to      enforce   mutual exclusion, avoid race conditions, and implement synchronization between processes.
-  The process of using Semaphores provides two operations: wait (P) and signal (V). The wait operation decrements the value of the     
-  semaphore, and the signal operation increments the value of the semaphore.
+Semaphores are integer variables that are used to solve the critical section problem by using two atomic operations, wait and signal that are used for process synchronization.
+Wait (P) Operation: Decrements the semaphore value, blocking the process if the value becomes zero.
+Signal (V) Operation: Increments the semaphore value, unblocking a waiting process if any.
+
+Binary semaphores: Can only have two values, 0 or 1, and are also known as mutex locks. They are used to control access to a single resource, such as a printer, Mutex: Blocks processes when locked (0), allows one process to proceed when unlocked (1).
+
+Counting semaphores: Can take on any nonnegative integer value. They are used to control access to multiple resources, such as resources with many copies
 
 13.what is memory management?
   Memory management is the process of controlling and coordinating a computer's main memory. It ensures that blocks of memory space are properly 
