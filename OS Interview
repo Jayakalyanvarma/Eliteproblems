@@ -1,5 +1,5 @@
 1. What is an operating system?
-  Operating System is an interface between the user and the computer hardware.It is responsible for the execution of all the processes, Resource Allocation, CPU management, FileManagement    
+Operating System is an interface between the user and the computer hardware.It is responsible for the execution of all the processes, Resource Allocation, CPU management, FileManagement    
 Key Functions:
 
 Process Management: Controls the execution of processes, including task scheduling, process creation and termination, and multitasking.
@@ -118,32 +118,31 @@ Answer: Sockets are endpoints for communication between processes running on the
 2.Explain types of OS?
 
 Batch os:
-  A batch Processing Operating System (BatchOS) is an open-source operating system designed to manage multiple jobs in sequence.without user   
-  interaction.
-  Uses: Ideal for large-scale data processing tasks such as payroll, billing systems, and scientific computations where jobs are repetitive and 
-  require minimal user interaction.
+  A batch Processing Operating System (BatchOS) is an open-source operating system designed to manage multiple jobs in sequence.without     user interaction.
+  Uses: Ideal for large-scale data processing tasks such as payroll, billing systems, and scientific computations where jobs are         
+        repetitive and require minimal user interaction.
   
 Time-Sharing OS:
   Explanation: Allows multiple users to access the system simultaneously by allocating processor time to each user.
-  Uses: Common in systems where many users need to interact with the system at once, such as university mainframes, business servers, and online 
-  transaction processing systems.
+  Uses: Common in systems where many users need to interact with the system at once, such as university mainframes, business servers,   
+        and online transaction processing systems.
   
 Distributed OS:
-  Explanation:A distributed operating system (DOS) is a type of operating system (OS) that connects multiple computer systems through a single 
-  communication channel. Each system has its    own processors and memory,
-  Uses: Employed in environments like cloud computing and data centers where tasks and resources are spread across multiple machines to improve 
-  performance and reliability.
+  Explanation:A distributed operating system (DOS) is a type of operating system (OS) that connects multiple computer systems through a 
+  single communication channel. Each system has its    own processors and memory,
+  Uses: Employed in environments like cloud computing and data centers where tasks and resources are spread across multiple machines to 
+        improve performance and reliability.
 
 Network OS:
-  Explanation:a network operating system(NOS) is software that connects multiple devices and computers on the network and allows them to share 
-  resources on the network.
-  Uses: Found in local area networks (LANs) and large enterprises to manage shared resources like files, printers, and internet access across 
-  multiple computers.
+  Explanation:a network operating system(NOS) is software that connects multiple devices and computers on the network and allows them to 
+  share resources on the network.
+  Uses: Found in local area networks (LANs) and large enterprises to manage shared resources like files, printers, and internet access 
+        across multiple computers.
 
 Real-Time OS (RTOS):
   Explanation: Provides immediate processing and response to external events within a strict time constraint.
-  Uses: Essential in applications requiring precise timing, such as embedded systems in medical devices, automotive control systems, industrial 
-  automation, and robotics.
+  Uses: Essential in applications requiring precise timing, such as embedded systems in medical devices, automotive control systems, 
+        industrial automation, and robotics.
 
 3.what is process and program?
   Program	                                                                                     Process
@@ -156,7 +155,6 @@ Program contains instructions 	                                                 
 
 
 4.Explain Process States?
-
   New:
   Explanation: The process is being created.
   Details: When a process is first initiated, it is in the "new" state. It has not yet started execution.
@@ -171,40 +169,42 @@ Program contains instructions 	                                                 
   
   Blocked (or Waiting):
   Explanation: The process is waiting for an event to occur (such as I/O completion).
-  Details: If a process needs to wait for resources, like input/output operations, it enters the "blocked" state until the required event occurs.
+  Details: If a process needs to wait for resources, like input/output operations, it enters the "blocked" state until the required 
+  event occurs.
   
   Terminated:
   Explanation: The process has finished execution.
-  Details: After a process completes its execution or is terminated by the operating system, it moves to the "terminated" state, where it waits to 
-  be removed from the process table.
+  Details: After a process completes its execution or is terminated by the operating system, it moves to the "terminated" state, where 
+  it waits to be removed from the process table.
 
 5.Explain different Types of scheduling Algorithms?
   1. First-Come, First-Served (FCFS) Scheduling:
-  Description: Processes are executed in the order they arrive in the ready queue. The CPU is allocated to the first process in the queue, which 
-  runs until it completes or is blocked.
+  Description: Processes are executed in the order they arrive in the ready queue. The CPU is allocated to the first process in the 
+  queue, which runs until it completes or is blocked.
   Advantages: Simple to implement.
   
   2. Shortest Job Next (SJN) / Shortest Job First (SJF) Scheduling:
-  Description: The process with the shortest burst time (execution time) is selected for execution next. Also known as Shortest Job First (SJF).
+  Description: The process with the shortest burst time (execution time) is selected for execution next. Also known as Shortest Job 
+  First (SJF).
   Advantages: Minimizes average waiting time and turnaround time.
   
   3. Round Robin (RR) Scheduling:
-  Description:Round Robin is a CPU scheduling algorithm where each process is cyclically assigned a fixed time slot. It is the preemptive version 
-  of the First come First Serve CPU Scheduling algorithm. 
+  Description:Round Robin is a CPU scheduling algorithm where each process is cyclically assigned a fixed time slot. It is the 
+  preemptive version of the First come First Serve CPU Scheduling algorithm. 
   Advantages: Fairness in resource allocation, prevents starvation.
   
   4. Priority Scheduling:
-  Description: Each process is assigned a priority, and the CPU is allocated to the process with the highest priority. Processes with the same 
-  priority are scheduled using FCFS.
+  Description: Each process is assigned a priority, and the CPU is allocated to the process with the highest priority. Processes with 
+  the same priority are scheduled using FCFS.
   Advantages: Allows for different levels of priority for different processes, suitable for real-time systems.
 
 6.what is process Synchronization?
-  Process synchronization in OS is the task of coordinating the execution of processes in such a way that no two processes can access the same 
-  shared data and resources.
+  Process synchronization in OS is the task of coordinating the execution of processes in such a way that no two processes can access 
+  the same shared data and resources.
 
 7.what is DeadLock?
-  A Deadlock is a situation where each of the computer process waits for a resource which is being assigned to some another process. In this 
-  situation, none of the process gets executed
+  A Deadlock is a situation where each of the computer process waits for a resource which is being assigned to some another process. In 
+  this situation, none of the process gets executed
 
 8.Explain the conditions necessary for a deadlock to occur.
   four necessary conditions for dead lock occur.
@@ -217,23 +217,24 @@ Program contains instructions 	                                                 
   4.Circular Wait:A set of process are waiting for each other in circular form.
 
 9. how can you prevent from dead lock?
-  deadlock can be prevented by eliminating any of the four necessary conditions, which are mutual exclusion, hold and wait, no preemption, and 
-  circular wait. 
+  deadlock can be prevented by eliminating any of the four necessary conditions, which are mutual exclusion, hold and wait, no 
+  preemption, and circular wait. 
 
 10.what are deadlock avoidance Algorithm?
-  Deadlock avoidance algorithms are techniques used to dynamically allocate resources to processes in such a way that deadlocks are prevented from 
-  occurring.
+  Deadlock avoidance algorithms are techniques used to dynamically allocate resources to processes in such a way that deadlocks are 
+  prevented from  occurring.
   1. Banker's Algorithm:
-  Description: Banker's algorithm is a resource allocation algorithm that ensures that the system will never enter a deadlock state by carefully 
-  managing the allocation of resources.
+  Description: Banker's algorithm is a resource allocation algorithm that ensures that the system will never enter a deadlock state by 
+  carefully managing the allocation of resources.
   2. Resource Allocation Graph (RAG):
-  Description: Resource Allocation Graph is a graphical representation used to track the allocation and request of resources by processes.
+  Description: Resource Allocation Graph is a graphical representation used to track the allocation and request of resources by 
+  processes.
 
 11.explain dead lock recovery Algorithms?
   Deadlock recovery algorithms are techniques used to recover from deadlock situations once they have occurred.
   1. Process Termination and Rollback:
-  Description: In this approach, one or more processes involved in the deadlock are selected for termination. The terminated processes release 
-  their held resources, allowing other processes to continue execution.
+  Description: In this approach, one or more processes involved in the deadlock are selected for termination. The terminated processes 
+  release their held resources, allowing other processes to continue execution.
   Rollback: If a process is terminated, its state may need to be rolled back to a safe checkpoint to maintain consistency.
   2. Resource Preemption:
   Description: Resources held by processes involved in the deadlock are forcibly preempted and allocated to other processes.
@@ -267,12 +268,19 @@ Binary semaphores: Can only have two values, 0 or 1, and are also known as mutex
 Counting semaphores: Can take on any nonnegative integer value. They are used to control access to multiple resources, such as resources with many copies
 
 13.what is memory management?
-  Memory management is the process of controlling and coordinating a computer's main memory. It ensures that blocks of memory space are properly 
-  managed and allocated so the operating system (OS), applications and other running processes.
+  Memory management is the process of controlling and coordinating a computer's main memory. It ensures that blocks of memory space are 
+  properly managed and allocated so the operating system (OS), applications and other running processes.
 
+Explain Swapping in Memory Management?
+Swapping in an operating system refers to the process of moving data between main memory (RAM) and secondary storage .
+Swapping has been subdivided into two concepts: swap-in and swap-out.
+Swap-out is a technique for moving a process from RAM to the hard disc.
+Swap-in is a method of transferring a program from a hard disc to main memory, or RAM.
+
+Explain Continuous memory management?
+Continuous memory management refers to a memory allocation technique where each process is allocated a single contiguous block of memory in the RAM. 
 14.explain pagging?
- Paging is a storage mechanism used to retrieve processes from the secondary storage into the main memory in the form of pages.The main   idea 
- behind the paging is to divide each process in the form of pages.
+ Paging is a storage mechanism used to retrieve processes from the secondary storage into the main memory in the form of pages.The main   idea behind the paging is to divide each process in the form of pages.
 
 15.explain segmentation?
   Segmentation is a memory management technique in which the memory is divided into the variable size parts. Each part is known as a     
@@ -287,17 +295,18 @@ Answer:Virtual memory is important for several reasons:
   Increases Program Size: It allows programs to run that require more memory than the physically available RAM.
   Isolation: It provides isolation between processes, enhancing system stability and security.
   Efficient Memory Use: It allows for more efficient use of physical memory by using techniques such as paging and segmentation.
-  Multitasking: It supports multitasking, allowing multiple applications to run simultaneously by ensuring that each has sufficient memory.
+  Multitasking: It supports multitasking, allowing multiple applications to run simultaneously by ensuring that each has sufficient 
+  memory.
 
 17.How does virtual memory work?
 Answer:Virtual memory works by using a combination of hardware and software mechanisms:
-  Paging: The memory is divided into fixed-sized blocks called pages. The OS keeps a mapping between virtual addresses used by a program and     
-  physical addresses in memory.
+  Paging: The memory is divided into fixed-sized blocks called pages. The OS keeps a mapping between virtual addresses used by a program 
+  and physical addresses in memory.
   Page Table: Each process has a page table that keeps track of where virtual pages are stored in physical memory.
-  Page Faults: When a program tries to access a page that is not currently in physical memory, a page fault occurs. The OS then retrieves the page 
-  from secondary storage (like a hard drive) and places it into RAM.
-  Swap Space: This is a portion of the hard drive that is used as an extension of RAM. When physical memory is full, inactive pages are moved to 
-  swap space to free up RAM for active processes.
+  Page Faults: When a program tries to access a page that is not currently in physical memory, a page fault occurs. The OS then 
+  retrieves the page from secondary storage (like a hard drive) and places it into RAM.
+  Swap Space: This is a portion of the hard drive that is used as an extension of RAM. When physical memory is full, inactive pages are 
+  moved to swap space to free up RAM for active processes.
     
 
 
@@ -305,10 +314,21 @@ Answer:Virtual memory works by using a combination of hardware and software mech
 Answer:Thrashing occurs when a system spends more time swapping pages in and out of memory than executing instructions. This happens when the system is over-committed with too many processes competing for memory, causing a high rate of page faults. The symptoms include high disk activity, slow system performance, and low CPU utilization. 
 
 19.Explain the concept of demand paging.
-Answer:Demand paging is a technique where pages of a program are only loaded into physical memory when they are needed (i.e., on demand), rather          than loading all pages at the start. When a process tries to access a page that is not in memory, a page fault occurs, and the OS loads the        required page from disk into memory.
+Answer:Demand paging is a technique where pages of a program are only loaded into physical memory when they are needed (i.e., on demand), rather          than loading all pages at the start. When a process tries to access a page that is not in memory, a page fault occurs, and the OS loads the required page from disk into memory.
+
+Explain Page replacement Algorithms?
+Page replacement algorithms are used in operating systems to decide which page to swap out of memory when a new page needs to be brought in.
+
+First In First Out (FIFO): This is the simplest page replacement algorithm. In this algorithm, the operating system keeps track of all pages in the memory in a queue, the oldest page is in the front of the queue. When a page needs to be replaced page in the front of the queue is selected for removal. 
+
+Optimal: Replace the page that will not be used for the longest period of time in the future.
+
+Least Recently Used: In this algorithm, page will be replaced which is least recently used. 
+
+
 
 20.How does the operating system decide which page to swap out during a page replacement?
-Answer:The OS uses a page replacement algorithm to decide which page to swap out when a page fault occurs and physical memory is full. Common page         replacement algorithms include:
+Answer:The OS uses a page replacement algorithm to decide which page to swap out when a page fault occurs and physical memory is full. Common page replacement algorithms include:
       FIFO (First-In, First-Out): The oldest page in memory is swapped out.
       LRU (Least Recently Used): The page that has not been used for the longest time is swapped out.
       Optimal: The page that will not be used for the longest time in the future is swapped out.
