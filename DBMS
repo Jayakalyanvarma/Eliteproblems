@@ -40,3 +40,33 @@ A materialized view is a duplicate data table created by combining data from mul
 
 what is stored procedure?
 A stored procedure in SQL is a group of SQL queries that can be saved and reused multiple times. It is very useful as it reduces the need for rewriting SQL queries. It enhances efficiency, reusability, and security in database management.
+
+SET OPERATIONS IN DBMS:-
+
+UNION: Combines the results of two or more SELECT queries into a single result set, removing duplicates.
+Example: SELECT column1 FROM table1 UNION SELECT column2 FROM table2;
+
+UNION ALL: Similar to UNION but includes all rows, including duplicates.
+Example: SELECT column1 FROM table1 UNION ALL SELECT column2 FROM table2;
+
+INTERSECT: Returns the common rows between the results of two SELECT queries.
+Example: SELECT column1 FROM table1 INTERSECT SELECT column1 FROM table2;
+
+MINUS: Returns the rows that are present in the first SELECT query but not in the second SELECT query.
+Example: SELECT column1 FROM table1 EXCEPT SELECT column1 FROM table2;
+
+
+explain various concurrency control techniques in dbms?
+Concurrency control techniques in Database Management Systems (DBMS) ensure that transactions are executed correctly and concurrently without causing data inconsistency or loss. Here are various concurrency control techniques:
+
+1. Lock-Based Concurrency Control:
+Description: Transactions acquire locks on data items to ensure exclusive access.
+Types:
+Two-Phase Locking (2PL): Transactions acquire locks in two phases (growing phase and shrinking phase) and release them only in the shrinking phase.
+Strict Two-Phase Locking (S2PL): Transactions hold all locks until the end of the transaction.
+
+Timestamp-Based Concurrency Control:
+Description: Assigns a unique timestamp to each transaction and data item to order transactions and resolve conflicts.
+Types:
+Timestamp Ordering Protocol (TO): Transactions are ordered based on their timestamps.
+Thomas Write Rule: Determines which transaction's write operation should be chosen when there is a write-write conflict.
