@@ -1,3 +1,51 @@
+Explain Various Integrity Constraints?
+Integrity constraints are the set of predefined rules that are used to maintain the quality of information. 
+
+Primary Key Constraint:
+Description: Ensures that each row in a table is uniquely identified by a primary key.
+Example: CREATE TABLE Employees (emp_id INT PRIMARY KEY, name VARCHAR(100));
+Purpose: Prevents duplicate entries and ensures data uniqueness.
+
+2. Unique Constraint:
+Description: Ensures that values in a column (or a group of columns) are unique.
+Example: CREATE TABLE Students (roll_no INT UNIQUE, name VARCHAR(100));
+Purpose: Ensures uniqueness but allows null values.
+
+3. Foreign Key Constraint:
+Description: Enforces referential integrity by ensuring that values in a column (foreign key) match values in another table's primary key (parent key).
+Example:
+CREATE TABLE Orders (
+    order_id INT PRIMARY KEY,
+    customer_id INT,
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
+);
+Purpose: Maintains relationships between tables and prevents orphaned records.
+
+4. Check Constraint:
+Description: Validates data based on a specified condition.
+Example: CREATE TABLE Employees (age INT CHECK (age >= 18));
+Purpose: Ensures that data meets certain conditions before being inserted or updated.
+
+5. Not Null Constraint:
+Description: Ensures that a column cannot contain NULL values.
+Example: CREATE TABLE Employees (emp_id INT NOT NULL, name VARCHAR(100));
+Purpose: Ensures that essential data is always provided.
+
+6. Entity Integrity Constraint:
+Description: Ensures that each row in a table is uniquely identifiable.
+Example: A combination of Primary Key and Unique constraints.
+Purpose: Guarantees that no duplicate rows exist in the table.
+
+7. Referential Integrity Constraint:
+Description: Ensures that relationships between tables are maintained correctly.
+Example: Foreign Key constraint.
+Purpose: Prevents inconsistencies and maintains data integrity across related tables.
+
+8. Domain Constraint:
+Description: Defines the permissible values for a column.
+Example: CREATE TABLE Students (age INT CHECK (age BETWEEN 18 AND 25));
+Purpose: Ensures that data falls within specified ranges or values.
+
 1.What is Normalization?
   Normalization is the process of organizing the data in the database.
   Normalization is used to minimize the redundancy from a relation or set of relations. It is also used to eliminate undesirable characteristics like Insertion, Update, and Deletion Anomalies.
@@ -70,3 +118,10 @@ Description: Assigns a unique timestamp to each transaction and data item to ord
 Types:
 Timestamp Ordering Protocol (TO): Transactions are ordered based on their timestamps.
 Thomas Write Rule: Determines which transaction's write operation should be chosen when there is a write-write conflict.
+
+
+what is log in dbms?
+In a Database Management System (DBMS), a log is a file that records all changes made to a database, including updates, inserts, and deletes.
+
+what is log based recovery Techniques in dbms?
+Log-based recovery is a technique used in Database Management Systems (DBMS) to ensure database consistency and recover from system failures.
