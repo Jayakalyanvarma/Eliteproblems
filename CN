@@ -114,10 +114,10 @@ What are the differences between IPv4 and IPv6?
 Answer: IPv4 uses 32-bit addresses allowing for 4.3 billion unique addresses, whereas IPv6 uses 128-bit addresses allowing for a vastly larger number of addresses. IPv6 also includes features like improved security and better address auto-configuration.
 
 What is a subnet mask?
-Answer: A subnet mask is a 32-bit number that divides an IP address into network and host parts, used to identify the network segment on which an IP address resides.
+Answer: A subnet mask is a 32-bit number that divides an IP address into two parts,One part identifies the host (computer), the other part identifies the network to which it belongs. 
 
 What is a MAC address?
-Answer: A MAC (Media Access Control) address is a unique identifier assigned to a network interface card (NIC) MAC address is the physical address, which uniquely identifies each device on a given network. To make communication between two networked devices,
+Answer: A MAC (Media Access Control) address is a 48-bit  address is a unique identifier assigned to a network interface card (NIC) MAC address is the physical address, which uniquely identifies each device on a given network. To make communication between two networked devices.
 
 What is DHCP?
 Answer: DHCP (Dynamic Host Configuration Protocol) is a network management protocol used to dynamically assign IP addresses and other network configuration parameters to devices on a network.
@@ -162,7 +162,7 @@ What is an SSID?
 Answer: An SSID (Service Set Identifier) is a unique identifier that names a wireless local area network (WLAN).
 
 What is the purpose of a gateway?
-Answer: A gateway is a network node that serves as an access point to another network, often used to connect different network architectures and protocols.
+Answer:A gateway is a network device that acts as an entry and exit point of network, connecting different networks and enabling communication between them.
 
 What is a proxy server?
 Answer: A proxy server is an intermediary server separating end users from the websites they browse, providing varying levels of functionality, security, and privacy.
@@ -192,7 +192,10 @@ What is a port number?
 Answer: A port number is a numerical identifier in networking used to distinguish different services or processes on a single device, such as HTTP (port 80) or FTP (port 21).
 
 What is the purpose of a subnet?
-Answer: Subnetting divides a large network into smaller, more manageable sub-networks, improving performance and security by isolating segments.
+Answer: A subnet, or subnetwork, is a logical division of an IP network into multiple smaller network segments. The process of dividing a network into subnets is called subnetting. 
+
+what is subnetiing?
+Subnetting is the process of dividing a larger network into smaller, more manageable subnetworks, using a subnet mask to designate portions of the IP address space for network and host addresses.
 
 What is a load balancer?
 Answer: A load balancer distributes network or application traffic across multiple servers to ensure no single server becomes overwhelmed, enhancing the availability and reliability of applications.
