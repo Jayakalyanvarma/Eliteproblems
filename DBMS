@@ -82,12 +82,21 @@ BCNF	            A stronger definition of 3NF is known as Boyce Codd's normal fo
 2.What is a View?
   View is a virtual table in which the records are not stored explicitly, 
   In DBMS, a view is a virtual table that provides a way to present data from one or more tables through a single query without storing the data itself.
+advantages of view:
+Improved readability: Views can make complex queries easier to read and maintain.
+Data security: Views can limit access to sensitive data by hiding specific rows or columns from unauthorized users.
+Storage Capacity: Views take very little space to store the data.
+Simplified tables: Views can join and simplify multiple tables into a single virtual table.
 
 What is a materialized view?
 A materialized view is a duplicate data table created by combining data from multiple existing tables for faster data retrieval.
 
 what is stored procedure?
 A stored procedure in SQL is a group of SQL queries that can be saved and reused multiple times. It is very useful as it reduces the need for rewriting SQL queries. It enhances efficiency, reusability, and security in database management.
+Improved Performance: Stored procedures are precompiled and stored in the database, reducing parsing and compilation overhead each time they are executed. This can result in faster execution times, especially for complex queries and operations.
+Code Reusability:
+
+Transaction Management: Stored procedures can include transaction management logic (BEGIN TRANSACTION, COMMIT, ROLLBACK), ensuring data integrity and consistency within the database.
 
 SET OPERATIONS IN DBMS:-
 
@@ -104,7 +113,7 @@ MINUS: Returns the rows that are present in the first SELECT query but not in th
 Example: SELECT column1 FROM table1 EXCEPT SELECT column1 FROM table2;
 
 
-explain various concurrency control techniques in dbms?
+1.explain various concurrency control techniques in dbms?
 Concurrency control techniques in Database Management Systems (DBMS) ensure that transactions are executed correctly and concurrently without causing data inconsistency or loss. Here are various concurrency control techniques:
 
 1. Lock-Based Concurrency Control:
@@ -119,9 +128,38 @@ Types:
 Timestamp Ordering Protocol (TO): Transactions are ordered based on their timestamps.
 Thomas Write Rule: Determines which transaction's write operation should be chosen when there is a write-write conflict.
 
+explain locks in dbms?
+Locks in database management systems (DBMS) are mechanisms used to control concurrent access to shared data by multiple transactions.
+
+Shared Lock (S-Lock): Allows multiple transactions to read a resource simultaneously but prevents any transaction from writing to it.
+
+Exclusive Lock (X-Lock): Grants exclusive access to a resource, preventing other transactions from reading or writing to it until the lock is released.
+
 
 what is log in dbms?
 In a Database Management System (DBMS), a log is a file that records all changes made to a database, including updates, inserts, and deletes.
 
 what is log based recovery Techniques in dbms?
 Log-based recovery is a technique used in Database Management Systems (DBMS) to ensure database consistency and recover from system failures.
+
+
+indexing in dbms:-
+The index is a type of data structure. It is used to locate and access the data in a database table quickly.
+
+Purpose: The primary purpose of an index is to improve the performance of SELECT queries by reducing the number of rows that need to be scanned.
+
+Types of Indexes:
+
+Single-Column Index: Created on a single column.
+
+Composite Index: Created on multiple columns.
+
+Unique Index: Ensures that indexed columns have unique values.
+
+clustered index:A clustered index determines the  order in which data is physically stored in table . ex:dictionary.
+a table can have only one clusterd index
+it is faster
+
+un-clusterd index:a non-clustered index is stored at one place and table data is stored in another place ex:book index page
+can have multiple clusterd indexes
+it is slower
