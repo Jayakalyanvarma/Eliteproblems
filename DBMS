@@ -1,3 +1,36 @@
+Dbms architecture?
+One-Tier Architecture (Single-tier Architecture):
+In a one-tier architecture, also known as a single-tier architecture
+All components of the application are installed and run on a single system.
+
+Two-Tier Architecture (Client-Server Architecture):
+In a two-tier architecture, the application logic and data storage are separated into two different systems: the client and the server.
+Client-side: User interface and application logic.
+Server-side: Database management system (DBMS) and data storage.
+Direct communication between client and server.
+Scalability and performance are better compared to one-tier architecture.
+Example:
+Online Banking System
+
+In a three-tier architecture, the application is divided into three logical tiers or layers: presentation layer, application layer (business logic), and data layer.
+
+Characteristics:
+Three tiers: presentation, application, and data.
+Presentation Layer: User interface, interacts with the user.
+Application Layer: Business logic and processing.
+Data Layer: Database management system (DBMS), stores and retrieves data.
+Improved scalability, flexibility, and maintenance compared to two-tier architecture.
+example:e-commerce website
+
+
+what is de-normalization?
+Denormalization is a technique in a database management system (DBMS) that improves database performance by adding redundant data to a normalized database. 
+
+what is curser?
+A cursor in a Database Management System (DBMS) is a temporary memory space that allows developers to access and manipulate individual records in a database row by row.
+
+
+
 Explain Various Integrity Constraints?
 Integrity constraints are the set of predefined rules that are used to maintain the quality of information. 
 
@@ -99,6 +132,7 @@ Code Reusability:
 Transaction Management: Stored procedures can include transaction management logic (BEGIN TRANSACTION, COMMIT, ROLLBACK), ensuring data integrity and consistency within the database.
 
 SET OPERATIONS IN DBMS:-
+The SQL Set operation is used to combine the two or more SQL SELECT statements.
 
 UNION: Combines the results of two or more SELECT queries into a single result set, removing duplicates.
 Example: SELECT column1 FROM table1 UNION SELECT column2 FROM table2;
