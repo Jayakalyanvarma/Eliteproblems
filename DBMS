@@ -1,3 +1,23 @@
+Transcations States:
+Active state:
+The active state is the first state of every transaction. In this state, the transaction is being executed.
+
+Partially Committed:
+Definition: The transaction has completed its final operation but is still not fully committed.
+
+Committed:
+Definition: The transaction has been successfully completed and all changes are permanently saved to the database.
+
+Failed:
+Definition: The transaction cannot proceed due to an error or interruption, and it cannot be completed successfully.
+
+Aborted:
+If the transaction fails in the middle of the transaction then before executing the transaction, all the executed transactions are rolled back to its consistent state.
+
+
+Terminated:
+Definition: The transaction has completed its lifecycle, either by committing successfully or aborting, and is no longer active.
+
 Dbms architecture?
 One-Tier Architecture (Single-tier Architecture):
 In a one-tier architecture, also known as a single-tier architecture
