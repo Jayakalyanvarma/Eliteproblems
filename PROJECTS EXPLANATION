@@ -16,6 +16,39 @@ we developed an automated system for converting text files to speech using AWS s
 The primary use of this project is to enhance accessibility for individuals with disabilities, particularly those with visual impairments or learning disabilities. By converting text files to speech, the project makes textual content accessible through audio format, ensuring inclusivity and equal access to information.
 
 
+1.Can you describe the purpose of your project?
+Ans:The project aims to automate text-to-speech conversion using AWS services, making text content more accessible for users who prefer audio formats or have visual impairments.
+
+Challenges faced in project?
+I faced challenge integrating the s3 with lamda function. i used AWS documentation and tutorials to understand the setup process. AWS provides detailed guides on configuring S3 event notifications and Lambda triggers. 
+
+2.How did you utilize AWS services in your project?
+Ans:We used AWS S3 for storing text files, AWS Lambda for triggering conversion upon file upload, AWS Polly for text-to-speech conversion, and S3 again for storing the generated speech files.
+
+3.Explain the workflow of your automated system.
+Ans:When a text file is uploaded to the S3 bucket, it triggers a Lambda function. The Lambda function retrieves the text, converts it to speech using Polly, and then stores the speech file back into S3.
+
+4.Why did you choose AWS S3 for storing text files?
+Ans:We chose S3 for its scalability, durability, and easy integration with other AWS services. It provides reliable storage for our text files with low latency access.
+
+5.How did you configure AWS Lambda to trigger upon file upload?
+Sample Answer: "We configured an S3 event notification to trigger the Lambda function whenever a new file is uploaded. Lambda then processes the uploaded file.
+
+6.What is the role of AWS Polly in your project, and why did you choose it?
+Ans:AWS Polly converts text to lifelike speech. We chose Polly for its high-quality voices, flexibility, and ease of integration with other AWS services.
+
+7.How did you ensure accessibility of the generated speech files?
+Ans:We stored the generated speech files back into S3, making them easily accessible to users. Additionally, we provided appropriate permissions for accessibility.
+
+8.Can you describe a scenario where this system would be particularly useful?
+This system would be useful in educational platforms, where students can listen to text-based study materials while commuting or doing other tasks.
+
+
+
+
+
+
+
 Water Quality Classification Using Machine Learning:-
 
  using the k-Nearest Neighbors (k-NN) algorithm to classify water as safe or unsafe to drink.
