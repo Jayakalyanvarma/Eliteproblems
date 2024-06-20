@@ -20,6 +20,7 @@ Multitasking is the ability of the operating system to execute multiple processe
 
 what is context switching
 The Context switching is a technique or method used by the operating system to switch a process from one state to another to execute its function using CPUs in the system.
+context switching helps to share a single CPU across all processes to complete its execution
 
 What is memory management?
 
