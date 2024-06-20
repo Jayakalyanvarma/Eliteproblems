@@ -18,6 +18,9 @@ The main purpose of an operating system (OS) is to make a computer system conven
 What is multitasking?
 Multitasking is the ability of the operating system to execute multiple processes concurrently by switching between them rapidly.
 
+what is context switching
+The Context switching is a technique or method used by the operating system to switch a process from one state to another to execute its function using CPUs in the system.
+
 What is memory management?
 
 Memory management involves allocating and deallocating memory for processes, managing memory protection, and implementing virtual memory techniques like paging and segmentation.
