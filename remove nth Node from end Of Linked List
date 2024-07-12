@@ -23,3 +23,184 @@ class Solution {
         
     }
 }
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------
+1.reverse words in a string
+------------------------------------
+S=input()
+s=S.split(" ")
+a=reversed(s)
+l=[]
+for i in a:
+    l.append(i)
+print(" ".join(l))
+
+
+----------------------------------
+2.anagram or not.
+-------------------------------------
+s1=input()
+s2=input()
+if sorted(s1)==sorted(s2):
+    print("anagram")
+else:
+    print("NOT a anagram")
+----------------------------------------
+3.Captalize first and last character in a world do for all entire string.
+----------------------------------------------------------------------------
+s=input().split(" ")
+l=[]
+for i in s:
+   a=list(i)
+   a[0],a[-1]=a[0].upper(),a[-1].upper()
+   l.append(a)
+A=""
+for i in l:
+    for j in i:
+        A+=j
+    A+=" "
+print(A)
+-------------------------------------------------------------------------------------
+4.check string is substring of another.
+--------------------------------------------------------------------------------------
+s1=input()
+s2=input()
+if s2 in s1:
+    print("True")
+else:
+    print("False")
+
+---------------------------------------------------------------------------------------
+5.generate all substrings of given string with length==k
+-------------------------------------------------------------------------------------
+s=input()
+Y=int(input())
+l=[]
+a=[]
+for i in range(len(s)+1):
+    for j in range(i+1,len(s)+1):
+        l.append(s[i:j])
+for i in l:
+    if len(i)==Y:
+        a.append(i)
+
+print(a)
+-------------------------------------------------------------
+print characters in string where count>1,frequency
+---------------------------------------------------------------------
+s=input()
+c={}
+for i in s:
+    if i in c:
+        c[i]+=1
+    else:
+        c[i]=1
+for k,v in c.items():
+    if v>1:
+        print(k,"occuerce is",v)
+-----------------------------------------------------------
+non repeating character in string
+-----------------------------------------------------------
+s=input()
+c={}
+for i in s:
+    if i in c:
+        c[i]+=1
+    else:
+        c[i]=1
+for k,v in c.items():
+    if v==1:
+        print(k,"occuerce is",v)
+--------------------------------------------------------------------------
+smallest and largest word in string
+--------------------------------------------------------------------------
+a=input().split(" ")
+s=list(a)
+sm=None
+la=""
+for i in s:
+    if sm is None or len(i)<len(sm):
+        sm=i
+    if len(i)>len(la):
+        la=i
+print("smallest=",sm,"-largest=",la)
+
+we initialized sm,la=None ,because suppose we initilized sm="", it was a small always tan amy other string
+----------------------------------------------------------------------------------------------------------------
+left rotate array.
+l=[int(x) for x in input().split()]
+n=int(input())
+a=l[n::]
+b=l[:n]
+print(a+b)
+
+or 
+
+l=[int(x) for x in input().split()]
+n=len(l)
+d=int(input())
+def rev(l,start,end):
+    while start<end:
+        t=l[start]
+        l[start]=l[end]
+        l[end]=t
+        start+=1
+        end-=1
+rev(l,0,n-d-1)
+rev(l,n-d,n-1)
+rev(l,0,n-1)
+print(l)
+--------------------------------------------------------------------------------------------------------
+right rotate array.
+l=[int(x) for x in input().split()]
+n=int(input())
+n1=len(l)
+a=n1-n
+a1=l[a::]
+a2=l[:a]
+print(a1+a2)
+
+or optimal 
+
+l=[int(x) for x in input().split()]
+n=len(l)
+d=int(input())
+def rev(l,start,end):
+    while start<end:
+        t=l[start]
+        l[start]=l[end]
+        l[end]=t
+        start+=1
+        end-=1
+rev(l,0,n-1)
+rev(l,0,d-1)
+rev(l,d,n-1)
+print(l)
+
+---------------------------------------------------------------------------------------
+longest common prifix in array of strings.
+Example 1:
+
+Input: strs = ["flower","flow","flight"]
+Output: "fl"
+Example 2:
+
+Input: strs = ["dog","racecar","car"]
+Output: ""
+Explanation: There is no common prefix among the input strings.
+
+def longestCommonPrefix(self, strs: List[str]) -> str:
+        strs.sort()
+        a=strs[0]
+        b=strs[-1]
+        s=""
+        for i in range(len(a)):
+            if a[i]!=b[i]:
+                break
+            else:
+                s+=a[i]
+
+        return s
