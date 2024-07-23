@@ -324,6 +324,42 @@ A for loop is used for iterating over a sequence (that is either a list, a tuple
 while loop is used to execute a set of statements as long as a condition is true.
 
 while loop is used to execute a block of statements repeatedly until a given condition is satisfied.
+--------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+interface:-
+from abc import ABC
+class Interface(ABC):
+    def connect(self):
+        pass
+    def disconnect(self):
+        pass
+class sql(Interface):
+    def connect(self):
+        print("connecting")
+    def disconnect(self):
+        print("discoonect")
+obj=sql()
+obj.connect()
+obj.disconnect()
+-----------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+abstract class:-
+
+from abc import ABC,abstractmethod
+class new(ABC):
+    @abstractmethod
+    def connect(self):
+        pass
+    def disconnect(self):
+        print("new")
+class sql(new):
+    def connect(self):
+        print("connecting")
+    
+obj=sql()
+obj.connect()
+obj.disconnect()
+
 
 
 
