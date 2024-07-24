@@ -567,3 +567,42 @@ Nesting aggregation functions involves using the result of one aggregation funct
 How do you handle grouping with NULL values when using aggregation functions in SQL?
 
 NULL values are treated as a single group when using aggregation functions in SQL. You can handle them by filtering or including them explicitly in the GROUP BY clause if needed.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Tables:-
+
+departments:-(dept_no,dept_name)
+dept_emp:-(emp_no,dept_no,from_date,to_date)
+dept_manager(emp_no,dept_no,from_date,to_date)
+employees(emp_no,first_name,last_name,birth_date,gender,hire_date)
+salaries(emp_no,salary,from_date,to_date)
+titles(emp_no,title,from_date,to_date)
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+1.)Dislay Employee full Name,Department name name from employeess database?
+
+select dept_name,concat(first_name," ",last_name) AS fullname from dept_emp d  
+join employees e on d.emp_no=e.emp_no  
+join departments f on f.dept_no=d.dept_no
+---------------------------------------------------------------------------------------
+2.)employee_no,emp_name,salary where employee has a highest salary
+
+select e.emp_no,s.salary,concat(e.first_name," ",e.last_name) AS Name 
+from salaries s 
+join employees e
+on s.emp_no=e.emp_no where s.salary = (select max(salary) from salaries)
+
+----------------------------------------------------------------------------------------------
+3.)display nth highest salary
+select e.emp_no,s.salary,concat(e.first_name," ",e.last_name) AS Name 
+from salaries s 
+join employees e
+on s.emp_no=e.emp_no 
+order by salary desc limit 1 offset 3
+----------------------------------------------------------------------------------------------
+
+
+
+
+
